@@ -14,5 +14,6 @@ public class elo : MonoBehaviour
     void Update()
     {
         siema
+            co  tam;
     }
 }
