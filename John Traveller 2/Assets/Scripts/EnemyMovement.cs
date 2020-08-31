@@ -6,14 +6,13 @@ public class EnemyMovement : MonoBehaviour
 {
     Transform target;
     [SerializeField]
-    float chaseRadius;
+    float chaseRadius = 1;
     public float attackRadius;
-    float moveSpeed;
+    float moveSpeed = 5f;
 
     void Start()
     {
         target = GameObject.FindGameObjectWithTag("Player").transform;
-        moveSpeed = 5;
     }
 
     
@@ -22,6 +21,7 @@ public class EnemyMovement : MonoBehaviour
         if (Vector3.Distance(target.position, transform.position) <= chaseRadius && Vector3.Distance(target.position, transform.position) > attackRadius)
         {
             transform.position = Vector3.MoveTowards(transform.position, target.position, moveSpeed * Time.deltaTime);
+            //transform.LookAt(target.forward + transform.position);
             RotateTowards();
         }
     }
