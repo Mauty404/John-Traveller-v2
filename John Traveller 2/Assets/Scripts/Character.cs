@@ -10,8 +10,11 @@ public class Character : MonoBehaviour
     private int attributePoints = 3;
     private int exp = 0;
     private int expMax = 100;
+    private int id = 0;
+    private bool isAlive;
     
     //Attributes
+    protected internal float speed = 1;
     private int strength = 1;
     private int vitality = 1;
     private int dexterity = 1;
@@ -46,6 +49,11 @@ public class Character : MonoBehaviour
     public override string ToString()
     {
         return this.name = name;
+    }
+
+    public void CalculateTakeDamage()
+    {
+        this.hp -= this.damage;
     }
 
     // Start is called before the first frame update

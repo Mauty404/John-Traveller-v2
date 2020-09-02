@@ -14,7 +14,9 @@ public class CameraMovement : MonoBehaviour
 
 
     void Update()
-    {
-
+    { 
+        target = GameObject.FindGameObjectWithTag("Player").transform;
+        transform.position = target.position;
     }
 }
+    
