@@ -14,6 +14,7 @@ public class CharacterSelector : MonoBehaviour
 
     int ID;
     bool isMale = true;
+    bool changedGender = false;
     const int max = 4;
 
     private void Awake()
@@ -37,29 +38,97 @@ public class CharacterSelector : MonoBehaviour
 
     public void Increase()
     {
-        ID++;
-        if (ID == max)
-            ID = 0;
+        if (changedGender == false)
+        {
+            ID++;
+            if (ID == max)
+                ID = 0;
+        }
+        changedGender = false;
+        
+
+        int localID = ID;
 
         switch (ID)
         {
             case 0:
-                male[3].transform.position = offScreen;
-                male[0].transform.position = characterPosition;
+                if (isMale)
+                {
+                    male[IDClampf(localID - 1)].transform.position = offScreen;
+                    male[ID].transform.position = characterPosition;
+                    female[ID].transform.position = offScreen;
+                    female[IDClampf(localID - 1)].transform.position = offScreen;
+
+                }
+                else
+                {
+                    female[IDClampf(localID - 1)].transform.position = offScreen;
+                    female[ID].transform.position = characterPosition;
+                    male[ID].transform.position = offScreen;
+                    male[IDClampf(localID - 1)].transform.position = offScreen;
+                }
+
                 break;
             case 1:
-                male[0].transform.position = offScreen;
-                male[1].transform.position = characterPosition;
+                if (isMale)
+                {
+                    male[IDClampf(localID - 1)].transform.position = offScreen;
+                    male[ID].transform.position = characterPosition;
+                    female[ID].transform.position = offScreen;
+                    female[IDClampf(localID - 1)].transform.position = offScreen;
+                }
+                else
+                {
+                    female[IDClampf(localID - 1)].transform.position = offScreen;
+                    female[ID].transform.position = characterPosition;
+                    male[ID].transform.position = offScreen;
+                    male[IDClampf(localID - 1)].transform.position = offScreen;
+                }
                 break;
             case 2:
-                male[1].transform.position = offScreen;
-                male[2].transform.position = characterPosition;
+                if (isMale)
+                {
+                    male[IDClampf(localID - 1)].transform.position = offScreen;
+                    male[ID].transform.position = characterPosition;
+                    female[ID].transform.position = offScreen;
+                    female[IDClampf(localID - 1)].transform.position = offScreen;
+                }
+                else
+                {
+                    female[IDClampf(localID - 1)].transform.position = offScreen;
+                    female[ID].transform.position = characterPosition;
+                    male[ID].transform.position = offScreen;
+                    male[IDClampf(localID - 1)].transform.position = offScreen;
+                }
                 break;
             case 3:
-                male[2].transform.position = offScreen;
-                male[3].transform.position = characterPosition;
+                if (isMale)
+                {
+                    male[IDClampf(localID - 1)].transform.position = offScreen;
+                    male[ID].transform.position = characterPosition;
+                    female[ID].transform.position = offScreen;
+                    female[IDClampf(localID - 1)].transform.position = offScreen;
+                }
+                else
+                {
+                    female[IDClampf(localID - 1)].transform.position = offScreen;
+                    female[ID].transform.position = characterPosition;
+                    male[ID].transform.position = offScreen;
+                    male[IDClampf(localID - 1)].transform.position = offScreen;
+                }
                 break;
         }
+
+    }
+
+    int IDClampf(int ID)
+    {
+        if (ID == max)
+            return 0;
+        if (ID == -1)
+            return 3;
+        else
+            return ID;
     }
 
     public void Decrease()
@@ -68,24 +137,99 @@ public class CharacterSelector : MonoBehaviour
         if (ID == -1)
             ID = 3;
 
+        int localID = ID;
+
         switch (ID)
         {
             case 0:
-                male[1].transform.position = offScreen;
-                male[0].transform.position = characterPosition;
+                if (isMale)
+                {
+                    male[IDClampf(localID + 1)].transform.position = offScreen;
+                    male[ID].transform.position = characterPosition;
+                    female[ID].transform.position = offScreen;
+                    female[IDClampf(localID - 1)].transform.position = offScreen;
+
+                }
+                else
+                {
+                    female[IDClampf(localID + 1)].transform.position = offScreen;
+                    female[ID].transform.position = characterPosition;
+                    male[ID].transform.position = offScreen;
+                    male[IDClampf(localID + 1)].transform.position = offScreen;
+                }
+
                 break;
             case 1:
-                male[2].transform.position = offScreen;
-                male[1].transform.position = characterPosition;
+                if (isMale)
+                {
+                    male[IDClampf(localID + 1)].transform.position = offScreen;
+                    male[ID].transform.position = characterPosition;
+                    female[ID].transform.position = offScreen;
+                    female[IDClampf(localID + 1)].transform.position = offScreen;
+                }
+                else
+                {
+                    female[IDClampf(localID + 1)].transform.position = offScreen;
+                    female[ID].transform.position = characterPosition;
+                    male[ID].transform.position = offScreen;
+                    male[IDClampf(localID + 1)].transform.position = offScreen;
+                }
                 break;
             case 2:
-                male[3].transform.position = offScreen;
-                male[2].transform.position = characterPosition;
+                if (isMale)
+                {
+                    male[IDClampf(localID + 1)].transform.position = offScreen;
+                    male[ID].transform.position = characterPosition;
+                    female[ID].transform.position = offScreen;
+                    female[IDClampf(localID + 1)].transform.position = offScreen;
+                }
+                else
+                {
+                    female[IDClampf(localID + 1)].transform.position = offScreen;
+                    female[ID].transform.position = characterPosition;
+                    male[ID].transform.position = offScreen;
+                    male[IDClampf(localID + 1)].transform.position = offScreen;
+                }
                 break;
             case 3:
-                male[0].transform.position = offScreen;
-                male[3].transform.position = characterPosition;
+                if (isMale)
+                {
+                    male[IDClampf(localID + 1)].transform.position = offScreen;
+                    male[ID].transform.position = characterPosition;
+                    female[ID].transform.position = offScreen;
+                    female[IDClampf(localID + 1)].transform.position = offScreen;
+                }
+                else
+                {
+                    female[IDClampf(localID + 1)].transform.position = offScreen;
+                    female[ID].transform.position = characterPosition;
+                    male[ID].transform.position = offScreen;
+                    male[IDClampf(localID + 1)].transform.position = offScreen;
+                }
                 break;
         }
     }
+
+    public void Male()
+    {
+        Debug.Log("Male");
+        isMale = true;
+        changedGender = true;
+        Increase();
+    }
+
+    public void Female()
+    {
+        Debug.Log("Female");
+        isMale = false;
+        changedGender = true;
+        Increase();
+    }
+
+
+    private void Update()
+    {
+       // Debug.Log(isMale);
+    }
+
 }
