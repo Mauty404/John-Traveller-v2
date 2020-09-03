@@ -16,8 +16,8 @@ public class CharacterSelector : MonoBehaviour
     Vector3 characterPosition;
     Vector3 offScreen;
 
-    int ID;
-    bool isMale = true;
+    public int ID;
+    public bool isMale = true;
     bool changedGender = false;
     const int max = 4;
 
@@ -228,7 +228,6 @@ public class CharacterSelector : MonoBehaviour
 
     public void Male()
     {
-        Debug.Log("Male");
         isMale = true;
         changedGender = true;
         Increase();
@@ -236,7 +235,6 @@ public class CharacterSelector : MonoBehaviour
 
     public void Female()
     {
-        Debug.Log("Female");
         isMale = false;
         changedGender = true;
         Increase();
