@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7861253577136540326}
   - component: {fileID: 5385965928656216896}
   - component: {fileID: 2141966514914015612}
+  - component: {fileID: -9206867388478726371}
   m_Layer: 0
   m_Name: Kinght (female)
   m_TagString: Player
@@ -151,3 +152,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.4815998, y: 0.618227}
   m_EdgeRadius: 0
+--- !u!114 &-9206867388478726371
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7861253577136540321}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfe48525c1d3f364b9a0a74f5fe10045, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 5
+  rb: {fileID: 0}

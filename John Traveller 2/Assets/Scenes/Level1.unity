@@ -7140,34 +7140,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2811833934654301400, guid: 2aff0ba34b0d43a4a91790ef567f6b3d, type: 3}
-      propertyPath: m_Offset.y
-      value: -0.09953904
-      objectReference: {fileID: 0}
-    - target: {fileID: 2811833934654301400, guid: 2aff0ba34b0d43a4a91790ef567f6b3d, type: 3}
-      propertyPath: m_Size.y
-      value: 0.8747735
-      objectReference: {fileID: 0}
-    - target: {fileID: 2811833934654301400, guid: 2aff0ba34b0d43a4a91790ef567f6b3d, type: 3}
-      propertyPath: m_Offset.x
-      value: 0.0055379868
-      objectReference: {fileID: 0}
-    - target: {fileID: 2811833934654301400, guid: 2aff0ba34b0d43a4a91790ef567f6b3d, type: 3}
-      propertyPath: m_Size.x
-      value: 0.5901823
-      objectReference: {fileID: 0}
-    - target: {fileID: 3341537181867369251, guid: 2aff0ba34b0d43a4a91790ef567f6b3d, type: 3}
-      propertyPath: m_BodyType
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3341537181867369251, guid: 2aff0ba34b0d43a4a91790ef567f6b3d, type: 3}
-      propertyPath: m_Mass
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3341537181867369251, guid: 2aff0ba34b0d43a4a91790ef567f6b3d, type: 3}
-      propertyPath: m_UseAutoMass
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6778561312884180577, guid: 2aff0ba34b0d43a4a91790ef567f6b3d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 6.67
