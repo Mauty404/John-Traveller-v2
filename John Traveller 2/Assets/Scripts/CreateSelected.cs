@@ -18,11 +18,11 @@ public class CreateSelected : MonoBehaviour
 
         if (_dataHolder.isMale)
         {
-            GameObject player = Instantiate(male[_dataHolder.ID]) as GameObject;
+            GameObject player = Instantiate(male[_dataHolder.ID], new Vector3(2.58f, 1.22f, 0f), new Quaternion(0f,0f,0f, 0f)) as GameObject;
         }
         else
         {
-            GameObject player = Instantiate(female[_dataHolder.ID]) as GameObject;
+            GameObject player = Instantiate(female[_dataHolder.ID], new Vector3(2.58f, 1.22f, 0f), new Quaternion(0f, 0f, 0f, 0f)) as GameObject;
         }
     }
 }
