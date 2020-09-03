@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3328620024582338537}
   - component: {fileID: 3124764723726833184}
   - component: {fileID: 6577831880167374249}
+  - component: {fileID: -5233872011497377387}
   m_Layer: 0
   m_Name: Kinght (male)
   m_TagString: Player
@@ -151,3 +152,17 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &-5233872011497377387
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3328620024582338536}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfe48525c1d3f364b9a0a74f5fe10045, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 5
+  rb: {fileID: 6577831880167374249}

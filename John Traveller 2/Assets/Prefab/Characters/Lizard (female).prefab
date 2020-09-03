@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8903021965344861358}
   - component: {fileID: 6901145081078413863}
   - component: {fileID: 5011963565156595050}
+  - component: {fileID: 8538418435485414658}
   m_Layer: 0
   m_Name: Lizard (female)
   m_TagString: Player
@@ -151,3 +152,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.5265142, y: 0.6519127}
   m_EdgeRadius: 0
+--- !u!114 &8538418435485414658
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8903021965344861359}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfe48525c1d3f364b9a0a74f5fe10045, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 5
+  rb: {fileID: 6901145081078413863}
