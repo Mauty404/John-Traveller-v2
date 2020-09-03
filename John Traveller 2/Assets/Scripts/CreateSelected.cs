@@ -10,14 +10,12 @@ public class CreateSelected : MonoBehaviour
     DataHolder _dataHolder;
     GameObject dataHolderObj;
 
-
-    void Start()
+    private void Awake()
     {
-
         _dataHolder = FindObjectOfType<DataHolder>();
         dataHolderObj = GameObject.Find("Data Holder");
         _dataHolder = dataHolderObj.GetComponent<DataHolder>();
-        
+
         if (_dataHolder.isMale)
         {
             GameObject player = Instantiate(male[_dataHolder.ID]) as GameObject;
