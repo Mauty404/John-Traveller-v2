@@ -1,11 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 
 public class CharacterSelector : MonoBehaviour
 {
+    List<string> genders = new List<string>() { "MALE", "FEMALE" };
+
+    public TMP_Dropdown dropdown; 
 
     public GameObject[] male;
     public GameObject[] female;
@@ -35,6 +39,18 @@ public class CharacterSelector : MonoBehaviour
        male[0].transform.position = characterPosition;
     }
 
+    private void Start()
+    {
+        dropdown.AddOptions(genders);
+    }
+
+    public void Dropdown_IndexChanged(int index)
+    {
+        if (index == 0)
+            Male();
+        else
+            Female();
+    }
 
     public void Increase()
     {
@@ -224,12 +240,6 @@ public class CharacterSelector : MonoBehaviour
         isMale = false;
         changedGender = true;
         Increase();
-    }
-
-
-    private void Update()
-    {
-       // Debug.Log(isMale);
     }
 
 }
