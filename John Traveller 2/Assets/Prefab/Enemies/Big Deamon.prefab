@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 6778561312884180579}
   - component: {fileID: 3341537181867369251}
   - component: {fileID: 2811833934654301400}
-  - component: {fileID: 5753094978399575242}
   m_Layer: 0
   m_Name: Big Deamon
   m_TagString: Enemy
@@ -152,17 +151,3 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.6479099, y: 0.99022865}
   m_EdgeRadius: 0
---- !u!114 &5753094978399575242
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6778561312884180578}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ae449b6d67df064d976ac239186f3d2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  chaseRadius: 4
-  attackRadius: 1

@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 8314133964943327697}
   - component: {fileID: 8314133964943327698}
   - component: {fileID: 8314133964943327699}
-  - component: {fileID: -9184418495302963464}
   - component: {fileID: 3160453955979722261}
   - component: {fileID: 1116933448275027801}
   m_Layer: 0
@@ -105,20 +104,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &-9184418495302963464
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8314133964943327700}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ae449b6d67df064d976ac239186f3d2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  chaseRadius: 4
-  attackRadius: 1
 --- !u!50 &3160453955979722261
 Rigidbody2D:
   serializedVersion: 4

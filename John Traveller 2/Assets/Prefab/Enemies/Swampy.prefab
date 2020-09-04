@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 2564961634395697866}
   - component: {fileID: 2564961634395697867}
   - component: {fileID: 2564961634395697860}
-  - component: {fileID: 8462708128886432656}
   - component: {fileID: 2982327209419785360}
   - component: {fileID: 6402816263695187166}
   m_Layer: 0
@@ -105,20 +104,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &8462708128886432656
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2564961634395697861}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ae449b6d67df064d976ac239186f3d2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  chaseRadius: 4
-  attackRadius: 1
 --- !u!61 &2982327209419785360
 BoxCollider2D:
   m_ObjectHideFlags: 0
