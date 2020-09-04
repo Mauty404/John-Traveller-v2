@@ -14,7 +14,8 @@ public class Character : MonoBehaviour
     private bool isAlive;
     
     //Attributes
-    protected internal float speed = 1;
+    
+    public float speed = 1;
     private int strength = 1;
     private int vitality = 1;
     private int dexterity = 1;
