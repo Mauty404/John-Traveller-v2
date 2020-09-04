@@ -14,8 +14,8 @@ public class Character : MonoBehaviour
     private bool isAlive;
     
     //Attributes
-    
-    public float speed = 1;
+    [SerializeField]
+    internal protected float speed = 1;
     private int strength = 1;
     private int vitality = 1;
     private int dexterity = 1;
@@ -52,10 +52,13 @@ public class Character : MonoBehaviour
         return this.name = name;
     }
 
-    public void CalculateTakeDamage()
+    public void TakeDamage()
     {
-        this.hp -= this.damage;
+        this.hp -= this.damage/this.defence;
+        if(this.hp <= 0)
+            Debug.Log("You Died");
     }
+    
 
     // Start is called before the first frame update
     void Start()

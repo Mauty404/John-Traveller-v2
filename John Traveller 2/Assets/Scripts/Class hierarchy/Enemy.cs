@@ -9,8 +9,10 @@ public class Enemy : Character
     public float stoppingDistance;
     public float distance;
     Character ch;
-    private float moveSpeed;
     private bool playerFound = false;
+    public float attackDistance;
+    private float lastAttackTime;
+    public float attackDelay;
     
 
 
@@ -18,14 +20,16 @@ public class Enemy : Character
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
-        Character ch = GetComponent<Character>();
-        moveSpeed = ch.speed;
+        ch = GetComponent<Character>();
+
     }
 
     // Update is called once per frame
     void Update()
     {
         Movement();
+        Attack();
+            
     }
 
 
@@ -36,8 +40,19 @@ public class Enemy : Character
         if (Vector2.Distance(player.position, transform.position) <= distance 
             && Vector2.Distance(player.position, transform.position) > stoppingDistance )
         {
-            transform.position = Vector2.MoveTowards(transform.position, player.position, moveSpeed * Time.deltaTime);
+            transform.position = Vector2.MoveTowards(transform.position, player.position, ch.speed * Time.deltaTime);
         }
+    }
+
+    void Attack()
+    {
+        if(Vector2.Distance(player.position, transform.position) < attackDistance)
+            if (Time.time > lastAttackTime + attackDelay)
+            {
+                ch.TakeDamage();
+                Debug.Log("Hit");
+                lastAttackTime = Time.time;
+            }
     }
     
 }
