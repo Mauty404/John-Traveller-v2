@@ -6,8 +6,8 @@ public class DataHolder : MonoBehaviour
 {
 
     CharacterSelector _characterSelector;
-    protected internal int ID;
-    protected internal bool isMale;
+    public int ID;
+    public bool isMale;
 
     private void Awake()
     {
