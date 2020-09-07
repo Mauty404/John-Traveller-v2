@@ -16,19 +16,19 @@ public class Character : MonoBehaviour
     //Attributes
     [SerializeField]
     internal protected float speed = 1;
-    private int strength = 1;
-    private int vitality = 1;
-    private int dexterity = 1;
-    private int agility = 1;
-    private int intelligence = 1;
+    private float strength = 1;
+    private float vitality = 1;
+    private float dexterity = 1;
+    private float agility = 1;
+    private float intelligence = 1;
     
     //
-    private int hp = 0;
-    private int hpMax = 0;
-    private int damage = 0; 
-    private int damageMax = 0;
-    private int accuracy = 0;
-    private int defence = 0;
+    private float hp = 0;
+    private float hpMax = 0;
+    private float damage = 0; 
+    private float damageMax = 0;
+    private float accuracy = 0;
+    private float defence = 0;
     
     //General
     private int gold = 100;
@@ -37,14 +37,20 @@ public class Character : MonoBehaviour
     {
         this.hp = this.vitality * 10;
         this.damageMax = this.strength * 2;
-        this.damage = this.strength;
-        this.accuracy = this.dexterity * 2;
-        this.defence = this.agility * 2;
+        this.damage = this.strength + this.accuracy;
+        this.accuracy = this.dexterity * (3/5);
+        this.defence = this.agility * 2;    
     }
 
     private void CalculateExp()
     {
-        this.expMax = this.level * 100; 
+        this.expMax = this.level * 100;
+        if(this.exp == this.expMax)
+        {
+            this.level++;
+            this.attributePoints += 3;
+        }
+            
     }
 
     public override string ToString()
@@ -55,8 +61,12 @@ public class Character : MonoBehaviour
     public void TakeDamage()
     {
         this.hp -= this.damage/this.defence;
-        if(this.hp <= 0)
+        if (this.hp <= 0)
+        {
             Debug.Log("You Died");
+            this.exp += 15;
+        }
+            
     }
     
 
