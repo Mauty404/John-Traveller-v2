@@ -1,11 +1,14 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SocialPlatforms.GameCenter;
 
 public class OpenDoors : MonoBehaviour
 {
-
+    public Transform Player;
     private Animator animator;
+    private double distance = 2.53;
     public void OpenDoor()
     {
         animator.SetBool("Open", true);
@@ -19,16 +22,22 @@ public class OpenDoors : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        Player = GameObject.FindWithTag("Player").transform;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.F))
+        if (Vector2.Distance(transform.position, Player.position) < distance)
         {
-            OpenDoor();
-            GetComponent<BoxCollider2D>().enabled = false;
+            if (Input.GetKeyDown(KeyCode.F))
+            {
+                {
+                    OpenDoor();
+                    GetComponent<BoxCollider2D>().enabled = false;
+                }
+            }
         }
+
     }
 }

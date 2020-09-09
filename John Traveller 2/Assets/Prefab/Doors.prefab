@@ -116,6 +116,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6d152b2d8ce5b543a3c19b44c1c8b97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Player: {fileID: 0}
+  openRadius: 2.53
 --- !u!61 &-2410832744655869703
 BoxCollider2D:
   m_ObjectHideFlags: 0
