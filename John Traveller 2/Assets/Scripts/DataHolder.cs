@@ -5,18 +5,22 @@ using UnityEngine.SceneManagement;
 
 public class DataHolder : MonoBehaviour
 {
+    public static DataHolder Instance;
 
     CharacterSelector _characterSelector;
     GameObject backgroundMusic;
-    public int ID;
-    public bool isMale;
+    protected internal int ID;
+    protected internal bool isMale;
 
     private void Awake()
     {
-        backgroundMusic = GameObject.Find("Background Music");
-        DontDestroyOnLoad(this.gameObject);
-        DontDestroyOnLoad(backgroundMusic.gameObject);
-
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+            Destroy(gameObject);
     }
 
     void Update()
@@ -27,9 +31,5 @@ public class DataHolder : MonoBehaviour
             ID = _characterSelector.ID;
             isMale = _characterSelector.isMale;
         }
-
-        
-    }
-
-    
+    }  
 }
