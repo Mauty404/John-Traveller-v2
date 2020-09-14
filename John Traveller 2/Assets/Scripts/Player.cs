@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-        private UI_Inventory uiInventory;
+    private UI_Inventory uiInventory;
     private Inventory inventory;
     // Start is called before the first frame update
 

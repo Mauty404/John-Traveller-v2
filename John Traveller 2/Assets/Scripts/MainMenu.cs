@@ -36,6 +36,8 @@ public class MainMenu : MonoBehaviour
             
         else
             DontDestroyOnLoad(_characterSelector.female[_characterSelector.ID]);
+        _characterSelector.female[_characterSelector.ID].transform.localScale = new Vector3(1f, 1f, 1f);
+        _characterSelector.female[_characterSelector.ID].transform.position = new Vector3(2.58f, 1.22f, 0f);
     }
 
     public void Back()
