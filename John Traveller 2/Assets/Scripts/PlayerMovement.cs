@@ -5,8 +5,7 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-
-    [SerializeField] private UI_Inventory uiInventory;
+    
     public float moveSpeed = 5f;
 
     Rigidbody2D rb;
@@ -15,7 +14,6 @@ public class PlayerMovement : MonoBehaviour
     private Vector2 movement;
     Vector3 currentPosition;
     Vector3 previousPosition;
-    private Inventory inventory;
 
 
 
@@ -24,8 +22,6 @@ public class PlayerMovement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         _animator = GetComponent<Animator>();
-        inventory = new Inventory();
-        uiInventory.SetInventory(inventory);
     }
 
     // Update is called once per frame
