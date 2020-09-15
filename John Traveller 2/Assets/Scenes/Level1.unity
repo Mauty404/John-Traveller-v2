@@ -7167,11 +7167,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18246517f2175d648928d5b93597069f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pfItemWorld: {fileID: 0}
-  coinSprite: {fileID: 21300000, guid: 606bd310967757a4785b8b44535c5653, type: 3}
-  keySprite: {fileID: 21300000, guid: 7c6c12895b84b2b43ae2f14e1afe66c0, type: 3}
-  flaskSprite: {fileID: 21300000, guid: 750a07cfeac1dfa4ca5c26c3bab9161b, type: 3}
-  weaponSprite: {fileID: 21300000, guid: a38dfe3e297ba8b478ea1e1eeb57e21a, type: 3}
 --- !u!4 &820904682
 Transform:
   m_ObjectHideFlags: 0

@@ -7,6 +7,7 @@ public class ChestScript : MonoBehaviour
     private Transform Player;
     private Animator animator;
     private double distance = 2.53;
+    GameObject canvas;
     
     public void OpenChest()
     {
@@ -22,6 +23,8 @@ public class ChestScript : MonoBehaviour
     void Start()
     {
         Player = GameObject.FindWithTag("Player").transform;
+        canvas = GameObject.Find("Tip");
+        canvas.SetActive(false);
     }
 
     // Update is called once per frame
@@ -29,6 +32,8 @@ public class ChestScript : MonoBehaviour
     {
         if (Vector2.Distance(transform.position, Player.position) < distance)
         {
+            if (animator.GetBool("Open") == false)
+                canvas.SetActive(true);
             if (Input.GetKeyDown(KeyCode.F))
             {
                 {
@@ -36,6 +41,8 @@ public class ChestScript : MonoBehaviour
                 }
             }
         }
+        else
+            canvas.SetActive(false);
 
     }
 }

@@ -166,9 +166,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb7fa7ef81fe32d448b4198d0817985a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  respawnTime: 0.5
-  amount: 3
+  respawnTime: 0
+  amountOfEnemies: 4
   characterPrefabs:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  boss: {fileID: 0}
