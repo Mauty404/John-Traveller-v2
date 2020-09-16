@@ -7,7 +7,6 @@ using UnityEngine;
 public class UI_KeyHolder : MonoBehaviour
 {
     [SerializeField] private KeyHolder keyHolder;
-    
     private Transform container;
     private Transform keyTemplate;
 
