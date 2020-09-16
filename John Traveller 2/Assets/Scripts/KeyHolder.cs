@@ -7,20 +7,27 @@ public class KeyHolder : MonoBehaviour
 {
     private List<Key.KeyType> keyList;
 
+    public event EventHandler OnKeysChanged;
     private void Awake()
     {
         keyList = new List<Key.KeyType>();
     }
 
+    public List<Key.KeyType> GetKeyList()
+    {
+        return keyList;
+    }
     public void AddKey(Key.KeyType keyType)
     {    
         Debug.Log("Added Key: " + keyType);
         keyList.Add(keyType);
+        OnKeysChanged?.Invoke(this, EventArgs.Empty);
     }
 
     public void RemoveKey(Key.KeyType keyType)
     {
         keyList.Remove(keyType);
+        OnKeysChanged?.Invoke(this, EventArgs.Empty);
     }
 
     public bool ContainsKey(Key.KeyType keyType)
