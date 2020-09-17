@@ -16,8 +16,15 @@ public class NextLevel : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        _sceneChangerAnim.FadeToLevel();
-        player.transform.position = new Vector3(5.04f, 3.32f, 0f);
+        _sceneChangerAnim.Fade(1);
+        StartCoroutine(Delay());
+        
 
+    }
+
+    IEnumerator Delay()
+    {
+        yield return new WaitForSeconds(1);
+        player.transform.position = new Vector3(5.04f, 3.32f, 0f);
     }
 }

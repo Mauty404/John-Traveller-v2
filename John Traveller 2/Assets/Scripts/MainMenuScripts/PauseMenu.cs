@@ -47,9 +47,16 @@ public class PauseMenu : MonoBehaviour
 
     public void Quit()
     {
-        _sceneChangerAnim.FadeToStart();
-        //SceneManager.LoadScene("StartMenu");
+        _sceneChangerAnim.Fade(3);
         Time.timeScale = 1f;
+        //SceneManager.LoadScene("StartMenu");
+        StartCoroutine(Delay());
+    }
+
+    IEnumerator Delay()
+    {
+        yield return new WaitForSeconds(1);
+        
         Destroy(dataHolder);
         Destroy(player);
     }

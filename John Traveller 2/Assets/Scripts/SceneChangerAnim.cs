@@ -4,45 +4,43 @@ using UnityEngine.SceneManagement;
 public class SceneChangerAnim : MonoBehaviour
 {
     public Animator _animator;
-
-    private void Start()
+    int globalMode = 1;
+    
+    enum Mode
     {
-        
+        NextScene = 1,
+        PrevScene,
+        StartScene
     }
 
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.K))
-            FadeToLevel();
-    }
 
-    public void FadeToLevel ()
+    public void Fade(int scene)
     {
+        if (scene == 1)
+            globalMode = (int)Mode.NextScene;
+
+        else if (scene == 2)
+            globalMode = (int)Mode.PrevScene;
+
+        else if (scene == 3)
+            globalMode = (int)Mode.StartScene;
+
         _animator.SetTrigger("FadeOut");
     }
 
-    public void FadeToPrev()
+    public void FadeToScene()
     {
-        _animator.SetTrigger("FadeOutPrev");
-    }
-
-    public void FadeToStart()
-    {
-        _animator.SetTrigger("FadeOutStart");
-    }
-
-    public void NextScene()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-    }
-
-    public void PrevScene()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
-    }
-
-    public void StartScene()
-    {
-        SceneManager.LoadScene("StartMenu");
+        switch (globalMode)
+        {
+            case 1:
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+                break;
+            case 2:
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+                break;
+            case 3:
+                SceneManager.LoadScene("StartMenu");
+                break;
+        }
     }
 }

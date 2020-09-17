@@ -18,7 +18,7 @@ public class MainMenu : MonoBehaviour
 
     public void NewGame()
     {
-        _sceneChangerAnim.FadeToLevel();
+        _sceneChangerAnim.Fade(1);
         //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
@@ -31,24 +31,32 @@ public class MainMenu : MonoBehaviour
 
     public void Select()
     {
-        _sceneChangerAnim.FadeToLevel();
+        _sceneChangerAnim.Fade(1);
+        StartCoroutine(Delay());
         //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-        if (_characterSelector.isMale)
-        {
-            DontDestroyOnLoad(_characterSelector.male[_characterSelector.ID]);
-            _characterSelector.male[_characterSelector.ID].transform.localScale = new Vector3(1f, 1f, 1f);
-            _characterSelector.male[_characterSelector.ID].transform.position = new Vector3(2.58f, 1.22f, 0f);
-        }
-            
-        else
-            DontDestroyOnLoad(_characterSelector.female[_characterSelector.ID]);
-        _characterSelector.female[_characterSelector.ID].transform.localScale = new Vector3(1f, 1f, 1f);
-        _characterSelector.female[_characterSelector.ID].transform.position = new Vector3(2.58f, 1.22f, 0f);
+        
     }
 
     public void Back()
     {
-        _sceneChangerAnim.FadeToPrev();
+        _sceneChangerAnim.Fade(2);
         //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+    }
+
+    IEnumerator Delay()
+    {
+        yield return new WaitForSeconds(1);
+        if (_characterSelector.isMale)
+        {
+            DontDestroyOnLoad(_characterSelector.male[_characterSelector.ID]);
+
+            _characterSelector.male[_characterSelector.ID].transform.localScale = new Vector3(1f, 1f, 1f);
+            _characterSelector.male[_characterSelector.ID].transform.position = new Vector3(2.58f, 1.22f, 0f);
+        }
+
+        else
+            DontDestroyOnLoad(_characterSelector.female[_characterSelector.ID]);
+        _characterSelector.female[_characterSelector.ID].transform.localScale = new Vector3(1f, 1f, 1f);
+        _characterSelector.female[_characterSelector.ID].transform.position = new Vector3(2.58f, 1.22f, 0f);
     }
 }
