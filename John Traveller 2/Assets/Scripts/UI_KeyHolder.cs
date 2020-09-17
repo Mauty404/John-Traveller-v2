@@ -4,16 +4,18 @@ using System.Collections.Generic;
 using Microsoft.Unity.VisualStudio.Editor;
 using UnityEngine;
 
+
 public class UI_KeyHolder : MonoBehaviour
 {
     [SerializeField] private KeyHolder keyHolder;
+    
     private Transform container;
     private Transform keyTemplate;
 
     private void Awake()
     {
         container = transform.Find("container");
-        keyTemplate = transform.Find("keyTemplate");
+        keyTemplate = container.Find("keyTemplate");
         keyTemplate.gameObject.SetActive(false);
     }
 
@@ -31,16 +33,15 @@ public class UI_KeyHolder : MonoBehaviour
         foreach (Transform child in container)
         {
             if(child == keyTemplate) continue;
-            Destroy(child.gameObject);
+            keyTemplate.gameObject.SetActive(false);
         }
         
         List<Key.KeyType> keyList = keyHolder.GetKeyList();
         for (int i = 0; i < keyList.Count; i++)
         {
-            Key.KeyType keyType = keyList[i];
             Transform keyTransform = Instantiate(keyTemplate, container);
+            keyTemplate.gameObject.SetActive(true);
             keyTransform.GetComponent<RectTransform>().anchoredPosition = new Vector2(50 * i, 0);
-            Image keyImage = keyTransform.Find("image").GetComponent<Image>();
         }
     }
 }

@@ -49,8 +49,9 @@ public class KeyHolder : MonoBehaviour
         {
             if (ContainsKey(keyDoor.GetKeyType()))
             {
-                    RemoveKey(keyDoor.GetKeyType());
-                    keyDoor.OpenDoor();
+                RemoveKey(keyDoor.GetKeyType());
+                keyDoor.OpenDoor();
+
             }
         }
     }

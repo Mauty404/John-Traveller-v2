@@ -11,7 +11,6 @@ public class OpenDoors : MonoBehaviour
     
     public Transform Player;
     private Animator animator;
-    private double distance = 2.53;
 
     public GameObject canvas;
 
