@@ -6,15 +6,20 @@ using UnityEngine.SceneManagement;
 public class MainMenu : MonoBehaviour
 {
     CharacterSelector _characterSelector;
+    SceneChangerAnim _sceneChangerAnim;
 
+
+    
     private void Start()
     {
         _characterSelector = GetComponent<CharacterSelector>();
+        _sceneChangerAnim = GameObject.Find("Scene Changer").GetComponent<SceneChangerAnim>();
     }
 
     public void NewGame()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        _sceneChangerAnim.FadeToLevel();
+        //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
     public void QuitGame()
@@ -26,7 +31,8 @@ public class MainMenu : MonoBehaviour
 
     public void Select()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        _sceneChangerAnim.FadeToLevel();
+        //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         if (_characterSelector.isMale)
         {
             DontDestroyOnLoad(_characterSelector.male[_characterSelector.ID]);
@@ -42,6 +48,7 @@ public class MainMenu : MonoBehaviour
 
     public void Back()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+        _sceneChangerAnim.FadeToPrev();
+        //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
     }
 }

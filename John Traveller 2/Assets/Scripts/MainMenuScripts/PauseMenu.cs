@@ -10,12 +10,14 @@ public class PauseMenu : MonoBehaviour
     GameObject player;
 
     GameObject dataHolder;
+    SceneChangerAnim _sceneChangerAnim;
 
     void Start()
     {
         pauseMenuUI.SetActive(false);
         dataHolder = GameObject.Find("Data Holder");
         player = GameObject.FindGameObjectWithTag("Player");
+        _sceneChangerAnim = GameObject.Find("Scene Changer").GetComponent< SceneChangerAnim>();
     }
 
     // Update is called once per frame
@@ -45,7 +47,8 @@ public class PauseMenu : MonoBehaviour
 
     public void Quit()
     {
-        SceneManager.LoadScene("StartMenu");
+        _sceneChangerAnim.FadeToStart();
+        //SceneManager.LoadScene("StartMenu");
         Time.timeScale = 1f;
         Destroy(dataHolder);
         Destroy(player);
