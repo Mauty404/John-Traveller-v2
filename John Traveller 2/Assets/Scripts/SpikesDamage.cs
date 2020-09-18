@@ -24,7 +24,6 @@ public class SpikesDamage : MonoBehaviour
             {
                 Debug.Log("Harm");
             }
-        
     }
 
     
