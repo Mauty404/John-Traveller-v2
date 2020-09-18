@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8314133964943327699}
   - component: {fileID: 3160453955979722261}
   - component: {fileID: 1116933448275027801}
+  - component: {fileID: 377040009}
   m_Layer: 0
   m_Name: Necromancer
   m_TagString: Untagged
@@ -30,7 +31,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.12576713, y: 1.073995, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 3116793361191856397}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -151,3 +153,149 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.5006938, y: 0.6164346}
   m_EdgeRadius: 0
+--- !u!114 &377040009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8314133964943327700}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50d982a7239740d48b742a7e7a37a8b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: 
+  level: 0
+  attributePoints: 3
+  exp: 0
+  expMax: 100
+  id: 0
+  isAlive: 0
+  speed: 1
+  strength: 1
+  vitality: 1
+  dexterity: 1
+  agility: 1
+  intelligence: 1
+  hp: 0
+  hpMax: 0
+  damage: 0
+  damageMax: 0
+  accuracy: 0
+  defence: 0
+  gold: 100
+  stoppingDistance: 0
+  distance: 0
+  attackDistance: 0
+  attackDelay: 0
+--- !u!1001 &508155685
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 8314133964943327697}
+    m_Modifications:
+    - target: {fileID: 3116793359955759786, guid: fea4b3deb30f4914d9e8a04a192fcd0c, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3116793359955759786, guid: fea4b3deb30f4914d9e8a04a192fcd0c, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3116793361297260069, guid: fea4b3deb30f4914d9e8a04a192fcd0c, type: 3}
+      propertyPath: m_Name
+      value: Health bar (canvas)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3116793361297260072, guid: fea4b3deb30f4914d9e8a04a192fcd0c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3116793361297260072, guid: fea4b3deb30f4914d9e8a04a192fcd0c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3116793361297260072, guid: fea4b3deb30f4914d9e8a04a192fcd0c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3116793361297260072, guid: fea4b3deb30f4914d9e8a04a192fcd0c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3116793361297260072, guid: fea4b3deb30f4914d9e8a04a192fcd0c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3116793361297260072, guid: fea4b3deb30f4914d9e8a04a192fcd0c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3116793361297260072, guid: fea4b3deb30f4914d9e8a04a192fcd0c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3116793361297260072, guid: fea4b3deb30f4914d9e8a04a192fcd0c, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3116793361297260072, guid: fea4b3deb30f4914d9e8a04a192fcd0c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3116793361297260072, guid: fea4b3deb30f4914d9e8a04a192fcd0c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3116793361297260072, guid: fea4b3deb30f4914d9e8a04a192fcd0c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3116793361297260072, guid: fea4b3deb30f4914d9e8a04a192fcd0c, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3116793361297260072, guid: fea4b3deb30f4914d9e8a04a192fcd0c, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3116793361297260072, guid: fea4b3deb30f4914d9e8a04a192fcd0c, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 270.50964
+      objectReference: {fileID: 0}
+    - target: {fileID: 3116793361297260072, guid: fea4b3deb30f4914d9e8a04a192fcd0c, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 58.960968
+      objectReference: {fileID: 0}
+    - target: {fileID: 3116793361297260072, guid: fea4b3deb30f4914d9e8a04a192fcd0c, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3116793361297260072, guid: fea4b3deb30f4914d9e8a04a192fcd0c, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3116793361297260072, guid: fea4b3deb30f4914d9e8a04a192fcd0c, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3116793361297260072, guid: fea4b3deb30f4914d9e8a04a192fcd0c, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3116793361297260072, guid: fea4b3deb30f4914d9e8a04a192fcd0c, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3116793361297260072, guid: fea4b3deb30f4914d9e8a04a192fcd0c, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fea4b3deb30f4914d9e8a04a192fcd0c, type: 3}
+--- !u!224 &3116793361191856397 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 3116793361297260072, guid: fea4b3deb30f4914d9e8a04a192fcd0c, type: 3}
+  m_PrefabInstance: {fileID: 508155685}
+  m_PrefabAsset: {fileID: 0}

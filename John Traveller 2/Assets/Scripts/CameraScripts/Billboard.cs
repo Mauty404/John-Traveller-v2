@@ -6,6 +6,11 @@ public class Billboard : MonoBehaviour
 {
     public Transform cam;
 
+    private void Start()
+    {
+        cam = GameObject.FindGameObjectWithTag("MainCamera").transform;
+    }
+
     // Update is called once per frame
     void LateUpdate()
     {
