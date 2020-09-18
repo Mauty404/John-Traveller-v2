@@ -5,33 +5,33 @@ using UnityEngine;
 public class Character : MonoBehaviour
 {
     //Core
-    private String name = "";
-    private int level = 0;
-    private int attributePoints = 3;
-    private int exp = 0;
-    private int expMax = 100;
-    private int id = 0;
-    private bool isAlive;
+    public String name = "";
+    public int level = 0;
+    public int attributePoints = 3;
+    public int exp = 0;
+    public int expMax = 100;
+    public int id = 0;
+    public bool isAlive;
     
     //Attributes
     [SerializeField]
     internal protected float speed = 1;
-    private float strength = 1;
-    private float vitality = 1;
-    private float dexterity = 1;
-    private float agility = 1;
-    private float intelligence = 1;
-    
+    public float strength = 1;
+    public float vitality = 1;
+    public float dexterity = 1;
+    public float agility = 1;
+    public float intelligence = 1;
+
     //
-    private float hp = 0;
-    private float hpMax = 0;
-    private float damage = 0; 
-    private float damageMax = 0;
-    private float accuracy = 0;
-    private float defence = 0;
-    
+    public float hp = 0;
+    public float hpMax = 0;
+    public float damage = 0;
+    public float damageMax = 0;
+    public float accuracy = 0;
+    public float defence = 0;
+
     //General
-    private int gold = 100;
+    public int gold = 100;
 
     private void CalculateStats()
     {
@@ -60,6 +60,7 @@ public class Character : MonoBehaviour
 
     public void TakeDamage()
     {
+        Debug.Log("Hit");
         this.hp -= this.damage/this.defence;
         if (this.hp <= 0)
         {

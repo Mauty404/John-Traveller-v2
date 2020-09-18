@@ -38,7 +38,7 @@ public class Enemy : Character
     void Movement()
     {
         if (Vector2.Distance(player.position, transform.position) <= distance 
-            && Vector2.Distance(player.position, transform.position) > stoppingDistance )
+            && Vector2.Distance(player.position, transform.position) > stoppingDistance)
         {
             transform.position = Vector2.MoveTowards(transform.position, player.position, ch.speed * Time.deltaTime);
         }
