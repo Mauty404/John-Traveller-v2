@@ -13,7 +13,8 @@ GameObject:
   - component: {fileID: 6778561312884180579}
   - component: {fileID: 3341537181867369251}
   - component: {fileID: 2811833934654301400}
-  m_Layer: 0
+  - component: {fileID: 795706149082931307}
+  m_Layer: 9
   m_Name: Big Deamon
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -136,7 +137,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.011780143, y: -0.15726662}
@@ -152,6 +153,42 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.6479099, y: 0.99022865}
   m_EdgeRadius: 0
+--- !u!114 &795706149082931307
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6778561312884180578}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50d982a7239740d48b742a7e7a37a8b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: 
+  level: 0
+  attributePoints: 3
+  exp: 0
+  expMax: 100
+  id: 0
+  isAlive: 0
+  speed: 1
+  strength: 1
+  vitality: 1
+  dexterity: 1
+  agility: 1
+  intelligence: 1
+  hp: 100
+  hpMax: 100
+  damage: 100
+  damageMax: 0
+  accuracy: 0
+  defence: 0
+  gold: 100
+  stoppingDistance: 0
+  distance: 0
+  attackDistance: 0
+  attackDelay: 0
 --- !u!1001 &3894409934303244426
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -167,9 +204,25 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3116793359955759787, guid: fea4b3deb30f4914d9e8a04a192fcd0c, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 3116793361007037793, guid: fea4b3deb30f4914d9e8a04a192fcd0c, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 3116793361168036928, guid: fea4b3deb30f4914d9e8a04a192fcd0c, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 3116793361297260069, guid: fea4b3deb30f4914d9e8a04a192fcd0c, type: 3}
       propertyPath: m_Name
       value: Health bar (canvas)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3116793361297260069, guid: fea4b3deb30f4914d9e8a04a192fcd0c, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 3116793361297260072, guid: fea4b3deb30f4914d9e8a04a192fcd0c, type: 3}
       propertyPath: m_LocalPosition.x

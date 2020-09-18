@@ -29,7 +29,8 @@ public class Enemy : Character
     {
         Movement();
         Attack();
-            
+        Dead();
+
     }
 
 
@@ -49,10 +50,9 @@ public class Enemy : Character
         if(Vector2.Distance(player.position, transform.position) < attackDistance)
             if (Time.time > lastAttackTime + attackDelay)
             {
-                ch.TakeDamage();
-                Debug.Log("Hit");
+                ch.TakeDamage(ch.damage);
                 lastAttackTime = Time.time;
             }
     }
-    
+
 }

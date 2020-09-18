@@ -7,13 +7,14 @@ using UnityEngine;
 
 public class UI_KeyHolder : MonoBehaviour
 {
-    [SerializeField] private KeyHolder keyHolder;
-    
+    private KeyHolder keyHolder;
+
     private Transform container;
     private Transform keyTemplate;
 
     private void Awake()
     {
+        keyHolder = GameObject.FindWithTag("Player").GetComponent<KeyHolder>();
         container = transform.Find("container");
         keyTemplate = container.Find("keyTemplate");
         keyTemplate.gameObject.SetActive(false);

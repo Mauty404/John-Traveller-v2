@@ -58,16 +58,19 @@ public class Character : MonoBehaviour
         return this.name = name;
     }
 
-    public void TakeDamage()
+    public void TakeDamage(float damage)
     {
         Debug.Log("Hit");
-        this.hp -= this.damage/this.defence;
-        if (this.hp <= 0)
+        hp -= damage;
+
+    }
+
+    public void Dead()
+    {
+        if(hp < 0)
         {
-            Debug.Log("You Died");
-            this.exp += 15;
+           Destroy(this.gameObject); 
         }
-            
     }
     
 
