@@ -48,8 +48,8 @@ public class Enemy : Character
     {
         if(Vector2.Distance(player.position, transform.position) < attackDistance)
             if (Time.time > lastAttackTime + attackDelay)
-            {
-                TakeDamage(pm.hp, damage);
+            { 
+                pm.hp = TakeDamage(pm.hp, damage);
                 lastAttackTime = Time.time;
             }
     }

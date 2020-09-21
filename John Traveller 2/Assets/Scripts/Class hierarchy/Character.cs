@@ -21,7 +21,7 @@ public class Character : MonoBehaviour
     public float dexterity = 1;
     public float agility = 1;
     public float intelligence = 1;
-
+    
     //
     public float hp = 0;
     public float hpMax = 0;
@@ -58,16 +58,17 @@ public class Character : MonoBehaviour
         return this.name = name;
     }
 
-    public void TakeDamage(float hp, float damage)
+    public float TakeDamage(float hp, float damage)
     {
         Debug.Log("Hit");
         hp -= damage;
+        return hp;
 
     }
 
     public void Dead()
     {
-        if(hp < 0)
+        if(hp <= 0)
         {
            Destroy(this.gameObject); 
         }

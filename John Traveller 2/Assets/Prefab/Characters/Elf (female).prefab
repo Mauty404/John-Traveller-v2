@@ -1,5 +1,35 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1864994297
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1864994298}
+  m_Layer: 0
+  m_Name: attackPos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1864994298
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1864994297}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 5201310698205721244}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5201310698205721313
 GameObject:
   m_ObjectHideFlags: 0
@@ -13,7 +43,6 @@ GameObject:
   - component: {fileID: 5201310698205721246}
   - component: {fileID: 309831798}
   - component: {fileID: 7103924112849797986}
-  - component: {fileID: 5002672436805139714}
   - component: {fileID: 3341414860825230378}
   - component: {fileID: -8520930653924661030}
   - component: {fileID: -9204092576086067288}
@@ -35,7 +64,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1.3448752, y: 2.1042037, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1864994298}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -156,38 +186,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &5002672436805139714
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5201310698205721313}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 789bf3b13a50e1c42abb8508de0c5b33, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  name: 
-  level: 0
-  attributePoints: 3
-  exp: 0
-  expMax: 100
-  id: 0
-  isAlive: 0
-  speed: 1
-  strength: 1
-  vitality: 1
-  dexterity: 1
-  agility: 1
-  intelligence: 1
-  hp: 0
-  hpMax: 0
-  damage: 0
-  damageMax: 0
-  accuracy: 0
-  defence: 0
-  gold: 100
 --- !u!114 &3341414860825230378
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -245,13 +243,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e32b9c5035ad37c4b89d5807fe48313b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startTimeBtwAttack: 0
-  attackPos: {fileID: 0}
+  attackPos: {fileID: 1864994298}
   whatIsEnemies:
     serializedVersion: 2
-    m_Bits: 0
-  attackRange: 0
-  damage: 0
+    m_Bits: 512
+  attackRange: 1.51
+  damage: 1
 --- !u!114 &7071810917038892108
 MonoBehaviour:
   m_ObjectHideFlags: 0

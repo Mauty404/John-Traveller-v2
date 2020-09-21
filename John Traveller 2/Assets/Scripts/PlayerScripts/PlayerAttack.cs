@@ -32,7 +32,7 @@ public class PlayerAttack : MonoBehaviour
             for (int i = 0; i < enemiesToDamage.Length; i++)
                 
             {
-                    enemiesToDamage[i].GetComponent<Character>().TakeDamage(e.hp, damage);
+                    e.hp = enemiesToDamage[i].GetComponent<Enemy>().TakeDamage(e.hp, damage);
             }
         }
 
