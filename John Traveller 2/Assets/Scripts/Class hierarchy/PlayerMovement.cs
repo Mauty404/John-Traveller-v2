@@ -62,7 +62,7 @@ public class PlayerMovement : Character
         if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D))
         {
             return true;
-            if (Input.GetKey())
+            
         }
             
         else
