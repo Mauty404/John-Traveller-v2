@@ -7199,11 +7199,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &531881383 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5201310698205721244, guid: 31ea76a43a5cbfe41a9bd60bed33c3b0, type: 3}
-  m_PrefabInstance: {fileID: 1088439525}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &699388268
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7211,10 +7206,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 795706149082931307, guid: 2aff0ba34b0d43a4a91790ef567f6b3d, type: 3}
-      propertyPath: damage
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2110686565176975904, guid: 2aff0ba34b0d43a4a91790ef567f6b3d, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -7222,26 +7213,6 @@ PrefabInstance:
     - target: {fileID: 2110686565176975904, guid: 2aff0ba34b0d43a4a91790ef567f6b3d, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2110686565176975905, guid: 2aff0ba34b0d43a4a91790ef567f6b3d, type: 3}
-      propertyPath: m_Layer
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 2110686566274530795, guid: 2aff0ba34b0d43a4a91790ef567f6b3d, type: 3}
-      propertyPath: m_Layer
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 2110686566380913866, guid: 2aff0ba34b0d43a4a91790ef567f6b3d, type: 3}
-      propertyPath: m_Layer
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 2110686566519049903, guid: 2aff0ba34b0d43a4a91790ef567f6b3d, type: 3}
-      propertyPath: m_Layer
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 2811833934654301400, guid: 2aff0ba34b0d43a4a91790ef567f6b3d, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6778561312884180577, guid: 2aff0ba34b0d43a4a91790ef567f6b3d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7291,10 +7262,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Big Deamon
       objectReference: {fileID: 0}
-    - target: {fileID: 6778561312884180578, guid: 2aff0ba34b0d43a4a91790ef567f6b3d, type: 3}
-      propertyPath: m_Layer
-      value: 9
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2aff0ba34b0d43a4a91790ef567f6b3d, type: 3}
 --- !u!1001 &1088439525
@@ -7304,26 +7271,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: -9204092576086067288, guid: 31ea76a43a5cbfe41a9bd60bed33c3b0, type: 3}
-      propertyPath: attackPos
-      value: 
-      objectReference: {fileID: 1864994298}
-    - target: {fileID: -9204092576086067288, guid: 31ea76a43a5cbfe41a9bd60bed33c3b0, type: 3}
-      propertyPath: whatIsEnemies.m_Bits
-      value: 512
-      objectReference: {fileID: 0}
-    - target: {fileID: -9204092576086067288, guid: 31ea76a43a5cbfe41a9bd60bed33c3b0, type: 3}
-      propertyPath: startTimeBtwAttack
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -9204092576086067288, guid: 31ea76a43a5cbfe41a9bd60bed33c3b0, type: 3}
-      propertyPath: attackRange
-      value: 1.51
-      objectReference: {fileID: 0}
-    - target: {fileID: -9204092576086067288, guid: 31ea76a43a5cbfe41a9bd60bed33c3b0, type: 3}
-      propertyPath: damage
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 5201310698205721244, guid: 31ea76a43a5cbfe41a9bd60bed33c3b0, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.62818336
@@ -7372,8 +7319,7 @@ PrefabInstance:
       propertyPath: m_Name
       value: Elf (female)
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 5002672436805139714, guid: 31ea76a43a5cbfe41a9bd60bed33c3b0, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 31ea76a43a5cbfe41a9bd60bed33c3b0, type: 3}
 --- !u!1001 &1096353763
 PrefabInstance:
@@ -7689,36 +7635,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1864994297
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1864994298}
-  m_Layer: 0
-  m_Name: attackPos
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1864994298
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1864994297}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 531881383}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1911140548
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7893,47 +7809,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bbbb674306727134bb51103a0d208b2d, type: 3}
---- !u!1 &2100857007 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6778561312884180578, guid: 2aff0ba34b0d43a4a91790ef567f6b3d, type: 3}
-  m_PrefabInstance: {fileID: 699388268}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2100857013
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2100857007}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 50d982a7239740d48b742a7e7a37a8b4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  name: 
-  level: 0
-  attributePoints: 3
-  exp: 0
-  expMax: 100
-  id: 0
-  isAlive: 0
-  speed: 1
-  strength: 1
-  vitality: 1
-  dexterity: 1
-  agility: 1
-  intelligence: 1
-  hp: 100
-  hpMax: 100
-  damage: 0
-  damageMax: 0
-  accuracy: 0
-  defence: 0
-  gold: 100
-  stoppingDistance: 0
-  distance: 0
-  attackDistance: 0
-  attackDelay: 0
 --- !u!1 &2125378807
 GameObject:
   m_ObjectHideFlags: 0
