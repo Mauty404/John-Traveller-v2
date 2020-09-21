@@ -14,6 +14,13 @@ public class PlayerMovement : Character
     private Vector2 movement;
     Vector3 currentPosition;
     Vector3 previousPosition;
+    int lastKeyMove;
+
+    enum enumLastKeyMove
+    {
+        up = 1,
+        down = 2
+    }
 
 
 
@@ -39,6 +46,9 @@ public class PlayerMovement : Character
         if (IsAttack())
             _animator.SetTrigger("Attack");
 
+
+
+        Dead();
         Rotate();
     }
 
@@ -50,7 +60,11 @@ public class PlayerMovement : Character
    bool IsMove()
     {
         if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D))
+        {
             return true;
+            if (Input.GetKey())
+        }
+            
         else
             return false;
     }

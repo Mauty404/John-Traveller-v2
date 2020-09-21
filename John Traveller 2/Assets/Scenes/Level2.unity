@@ -9428,10 +9428,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fader (canvas)
       objectReference: {fileID: 0}
-    - target: {fileID: 2182445038041360709, guid: e023c2314f05f2f429cfcf72ef2a667f, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2182445038041360713, guid: e023c2314f05f2f429cfcf72ef2a667f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -9515,10 +9511,6 @@ PrefabInstance:
     - target: {fileID: 2182445038041360713, guid: e023c2314f05f2f429cfcf72ef2a667f, type: 3}
       propertyPath: m_Pivot.y
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2182445038041360714, guid: e023c2314f05f2f429cfcf72ef2a667f, type: 3}
-      propertyPath: m_SortingOrder
-      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e023c2314f05f2f429cfcf72ef2a667f, type: 3}

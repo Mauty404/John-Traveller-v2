@@ -7,6 +7,8 @@ public class SpikesDamage : MonoBehaviour
 
     Animator _animator;
     GameObject player;
+    PlayerMovement _playerMovement;
+
 
     void Start()
     {
@@ -14,6 +16,7 @@ public class SpikesDamage : MonoBehaviour
         _animator.SetBool("Active", false);
         StartCoroutine(ActiveSpikes());
         player = GameObject.FindGameObjectWithTag("Player");
+        _playerMovement = player.GetComponent<PlayerMovement>();
     }
 
 
@@ -22,7 +25,7 @@ public class SpikesDamage : MonoBehaviour
         if (_animator.GetBool("Active") == true)
             if (Vector2.Distance(transform.position, player.transform.position) < 0.44)
             {
-                Debug.Log("Harm");
+                _playerMovement.hp -= 11;
             }
     }
 
