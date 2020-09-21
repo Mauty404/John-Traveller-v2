@@ -15,6 +15,8 @@ GameObject:
   - component: {fileID: 4623221997654345280}
   - component: {fileID: -218809949660225565}
   - component: {fileID: 2913837246643115535}
+  - component: {fileID: -4409387185443405209}
+  - component: {fileID: -2842541256138138608}
   m_Layer: 0
   m_Name: Wizzard (male)
   m_TagString: Player
@@ -212,6 +214,30 @@ MonoBehaviour:
   - {fileID: 7448332654332681927}
   fullHeart: {fileID: 21300000, guid: ae1384068d255f546ae408e22edf5e97, type: 3}
   emptyHeart: {fileID: 21300000, guid: 2d7c06b040c5730439a7da6e9dcc9aed, type: 3}
+--- !u!114 &-4409387185443405209
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8544842203409883975}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f3c7d06a984bfd4080dc87a93e0c564, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &-2842541256138138608
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8544842203409883975}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4dc6542deffcc2f4b812d8bd81c343cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2022616394635202699
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -47,6 +47,7 @@ GameObject:
   - component: {fileID: 1495312660171938017}
   - component: {fileID: 1543002274798231622}
   - component: {fileID: 7858142638223680300}
+  - component: {fileID: -1697267932335664452}
   m_Layer: 0
   m_Name: Elf (male)
   m_TagString: Player
@@ -276,6 +277,18 @@ MonoBehaviour:
   - {fileID: 6037038208251262846}
   fullHeart: {fileID: 21300000, guid: ae1384068d255f546ae408e22edf5e97, type: 3}
   emptyHeart: {fileID: 21300000, guid: 2d7c06b040c5730439a7da6e9dcc9aed, type: 3}
+--- !u!114 &-1697267932335664452
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1543002274798231673}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4dc6542deffcc2f4b812d8bd81c343cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2921661539421993266
 PrefabInstance:
   m_ObjectHideFlags: 0
