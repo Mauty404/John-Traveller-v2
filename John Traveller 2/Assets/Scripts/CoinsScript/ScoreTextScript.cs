@@ -3,15 +3,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class ScoreTextScript : MonoBehaviour
 {
-    Text text;
+    TMP_Text text;
     public static int coinAmount;
 
     private void Start()
     {
-        text = GetComponent<Text>();
+        text = GetComponent<TMP_Text>();
     }
 
     private void Update()

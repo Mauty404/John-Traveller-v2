@@ -34,7 +34,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 369.861, y: 499.01}
+  m_AnchoredPosition: {x: 369.861, y: 490.01004}
   m_SizeDelta: {x: 81.9736, y: 81.9736}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8884491502381551181
@@ -109,7 +109,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 205.914, y: 499}
+  m_AnchoredPosition: {x: 205.914, y: 490.00003}
   m_SizeDelta: {x: 81.9736, y: 81.9736}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8884491502636707830
@@ -184,7 +184,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -203.94, y: 499}
+  m_AnchoredPosition: {x: -203.94, y: 490}
   m_SizeDelta: {x: 81.9736, y: 81.9736}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8884491502773802042
@@ -259,7 +259,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -285.91003, y: 499}
+  m_AnchoredPosition: {x: -285.91003, y: 490.00003}
   m_SizeDelta: {x: 81.9736, y: 81.9736}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8884491503157472955
@@ -334,7 +334,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 287.88757, y: 499}
+  m_AnchoredPosition: {x: 287.88757, y: 490.00003}
   m_SizeDelta: {x: 81.9736, y: 81.9736}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8884491503221099257
@@ -409,7 +409,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 123.94, y: 499.01}
+  m_AnchoredPosition: {x: 123.94, y: 490.01004}
   m_SizeDelta: {x: 81.9736, y: 81.9736}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8884491503294843720
@@ -484,7 +484,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -121.97, y: 499}
+  m_AnchoredPosition: {x: -121.97, y: 490.00003}
   m_SizeDelta: {x: 81.9736, y: 81.9736}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8884491503491690701
@@ -559,7 +559,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -40, y: 499.01}
+  m_AnchoredPosition: {x: -40, y: 490.01004}
   m_SizeDelta: {x: 81.9736, y: 81.9736}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8884491503624286033
@@ -634,7 +634,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -367.88, y: 499}
+  m_AnchoredPosition: {x: -367.88, y: 490}
   m_SizeDelta: {x: 81.9736, y: 81.9736}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8884491504022953949
@@ -709,7 +709,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 41.97, y: 499}
+  m_AnchoredPosition: {x: 41.97, y: 490.00003}
   m_SizeDelta: {x: 81.9736, y: 81.9736}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8884491504178542333
@@ -762,8 +762,9 @@ GameObject:
   - component: {fileID: 8884491504222113213}
   - component: {fileID: 8884491504222113212}
   - component: {fileID: 8884491504222113211}
+  - component: {fileID: 1368582694}
   m_Layer: 0
-  m_Name: HeartSystem
+  m_Name: Heart System
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -817,7 +818,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 5
   m_TargetDisplay: 0
 --- !u!114 &8884491504222113212
 MonoBehaviour:
@@ -858,3 +859,28 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &1368582694
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8884491504222113209}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ecf0ae31c1676e4ebdec551ac9eb54a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hearts:
+  - {fileID: 8884491504022953948}
+  - {fileID: 8884491503157472954}
+  - {fileID: 8884491502773802041}
+  - {fileID: 8884491503491690700}
+  - {fileID: 8884491503624286032}
+  - {fileID: 8884491504178542332}
+  - {fileID: 8884491503294843719}
+  - {fileID: 8884491502636707829}
+  - {fileID: 8884491503221099256}
+  - {fileID: 8884491502381551180}
+  fullHeart: {fileID: 21300000, guid: ae1384068d255f546ae408e22edf5e97, type: 3}
+  emptyHeart: {fileID: 21300000, guid: 2d7c06b040c5730439a7da6e9dcc9aed, type: 3}

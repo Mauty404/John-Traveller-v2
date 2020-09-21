@@ -52,13 +52,13 @@ public class MainMenu : MonoBehaviour
 
             _characterSelector.male[_characterSelector.ID].transform.localScale = new Vector3(1f, 1f, 1f);
             _characterSelector.male[_characterSelector.ID].transform.position = new Vector3(2.58f, 1.22f, 0f);
-            _characterSelector.male[_characterSelector.ID].transform.GetChild(0).gameObject.SetActive(true);
+            //_characterSelector.male[_characterSelector.ID].transform.GetChild(0).gameObject.SetActive(true);
         }
 
         else
             DontDestroyOnLoad(_characterSelector.female[_characterSelector.ID]);
         _characterSelector.female[_characterSelector.ID].transform.localScale = new Vector3(1f, 1f, 1f);
         _characterSelector.female[_characterSelector.ID].transform.position = new Vector3(2.58f, 1.22f, 0f);
-        _characterSelector.female[_characterSelector.ID].transform.GetChild(0).gameObject.SetActive(true);
+        //_characterSelector.female[_characterSelector.ID].transform.GetChild(0).gameObject.SetActive(true);
     }
 }

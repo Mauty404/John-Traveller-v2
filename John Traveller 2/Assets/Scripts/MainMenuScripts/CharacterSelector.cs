@@ -30,11 +30,11 @@ public class CharacterSelector : MonoBehaviour
             male[i] = Instantiate(male[i]) as GameObject;
             male[i].transform.localScale = new Vector3(150f, 150f, 1f);
             male[i].transform.position = offScreen;
-            male[i].transform.GetChild(0).gameObject.SetActive(false);
+            //male[i].transform.GetChild(0).gameObject.SetActive(false);
             female[i] = Instantiate(female[i]) as GameObject;
             female[i].transform.localScale = new Vector3(150f, 150f, 1f);
             female[i].transform.position = offScreen;
-            female[i].transform.GetChild(0).gameObject.SetActive(false);
+            //female[i].transform.GetChild(0).gameObject.SetActive(false);
 
         }
             
