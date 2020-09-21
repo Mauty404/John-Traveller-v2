@@ -58,7 +58,7 @@ public class Character : MonoBehaviour
         return this.name = name;
     }
 
-    public void TakeDamage(float damage)
+    public void TakeDamage(float hp, float damage)
     {
         Debug.Log("Hit");
         hp -= damage;

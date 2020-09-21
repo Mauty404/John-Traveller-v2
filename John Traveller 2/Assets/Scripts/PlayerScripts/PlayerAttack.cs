@@ -5,47 +5,42 @@ using UnityEngine;
 
 public class PlayerAttack : MonoBehaviour
 {
-    private float timeBtwAttack;
-    public float startTimeBtwAttack;
-
+    
     public Transform attackPos;
     public LayerMask whatIsEnemies;
     public float attackRange;
     public float damage;
     private Enemy e;
     private Character ch;
+    
 
 
     private void Start()
     {
-        e = GetComponent<Enemy>();
+        e = GameObject.FindWithTag("Enemy").GetComponent<Enemy>();
+
     }
 
     private void Update()
     {
-        if (timeBtwAttack <= 0)
-        {
-            if (Input.GetKey(KeyCode.Space))
-            {
-                Collider2D[] enemiesToDamage = Physics2D.OverlapCircleAll(attackPos.position, attackRange, whatIsEnemies);
-                for (int i = 0; i < enemiesToDamage.Length; i++)
-                {
-                    enemiesToDamage[i].GetComponent<Character>().TakeDamage(damage);
-                }
-
-                timeBtwAttack = startTimeBtwAttack;
-            }
-            else
-            {
-                timeBtwAttack -= Time.deltaTime;
-            }
+        
+        if(Input.GetKeyDown(KeyCode.Space))
             
+        {
+            Debug.Log("jebac disa");
+            Collider2D[] enemiesToDamage = Physics2D.OverlapCircleAll(attackPos.position, attackRange, whatIsEnemies);
+            for (int i = 0; i < enemiesToDamage.Length; i++)
+                
+            {
+                    enemiesToDamage[i].GetComponent<Character>().TakeDamage(e.hp, damage);
+            }
         }
 
-        void OnDrawGizmosSelected()
-        {
-            Gizmos.color = Color.red;
-            Gizmos.DrawWireSphere(attackPos.position, attackRange);
-        } 
+        
     }
+    void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(attackPos.position, attackRange);
+    } 
 }

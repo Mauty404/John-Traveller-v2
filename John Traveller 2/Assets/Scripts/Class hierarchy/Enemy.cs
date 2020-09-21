@@ -13,7 +13,7 @@ public class Enemy : Character
     public float attackDistance;
     private float lastAttackTime;
     public float attackDelay;
-    
+    private PlayerMovement pm;
 
 
     // Start is called before the first frame update
@@ -21,16 +21,15 @@ public class Enemy : Character
     {
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
         ch = GetComponent<Character>();
-
+        pm = GameObject.FindWithTag("Player").GetComponent<PlayerMovement>();
     }
 
     // Update is called once per frame
     void Update()
     {
         Movement();
-        Attack();
         Dead();
-
+        Attack();
     }
 
 
@@ -50,7 +49,7 @@ public class Enemy : Character
         if(Vector2.Distance(player.position, transform.position) < attackDistance)
             if (Time.time > lastAttackTime + attackDelay)
             {
-                ch.TakeDamage(ch.damage);
+                TakeDamage(pm.hp, damage);
                 lastAttackTime = Time.time;
             }
     }
