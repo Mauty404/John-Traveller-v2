@@ -27,7 +27,6 @@ public class PlayerAttack : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.Space))
             
         {
-            Debug.Log("jebac disa");
             Collider2D[] enemiesToDamage = Physics2D.OverlapCircleAll(attackPos.position, attackRange, whatIsEnemies);
             for (int i = 0; i < enemiesToDamage.Length; i++)
                 

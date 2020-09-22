@@ -15,8 +15,12 @@ public class Enemy : Character
     public float attackDelay;
     private PlayerMovement pm;
 
+    private void Awake()
+    {
+        
+        id++;
+    }
 
-    // Start is called before the first frame update
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
@@ -24,7 +28,7 @@ public class Enemy : Character
         pm = GameObject.FindWithTag("Player").GetComponent<PlayerMovement>();
     }
 
-    // Update is called once per frame
+
     void Update()
     {
         Movement();

@@ -18,8 +18,6 @@ public class NextLevel : MonoBehaviour
     {
         _sceneChangerAnim.Fade(1);
         StartCoroutine(Delay());
-        
-
     }
 
     IEnumerator Delay()

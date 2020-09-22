@@ -14,7 +14,7 @@ public class PlayerMovement : Character
     private Vector2 movement;
     Vector3 currentPosition;
     Vector3 previousPosition;
-    int lastKeyMove;
+    protected internal int lastKeyMove;
 
     enum enumLastKeyMove
     {
@@ -23,15 +23,18 @@ public class PlayerMovement : Character
     }
 
 
+    private void Awake()
+    {
+        id++;
+    }
 
-    // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         _animator = GetComponent<Animator>();
     }
 
-    // Update is called once per frame
+
     void Update()
     {
         
@@ -61,8 +64,13 @@ public class PlayerMovement : Character
     {
         if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D))
         {
+            if (Input.GetKey(KeyCode.W))
+                lastKeyMove = (int)enumLastKeyMove.up;
+            else if (Input.GetKey(KeyCode.S))
+                lastKeyMove = (int)enumLastKeyMove.down;
+
+
             return true;
-            
         }
             
         else

@@ -26,6 +26,10 @@ public class SpikesDamage : MonoBehaviour
             if (Vector2.Distance(transform.position, player.transform.position) < 0.44)
             {
                 _playerMovement.hp -= 11;
+                if (_playerMovement.lastKeyMove == 1)
+                    player.transform.position = new Vector3(player.transform.position.x, 25.39f, player.transform.position.z);
+                else if (_playerMovement.lastKeyMove == 2)
+                    player.transform.position = new Vector3(player.transform.position.x, 23.89f, player.transform.position.z);
             }
     }
 

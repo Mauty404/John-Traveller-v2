@@ -5,14 +5,14 @@ using UnityEngine;
 public class Character : MonoBehaviour
 {
     //Core
-    public String name = "";
+    public new String name;
     public int level = 0;
     public int attributePoints = 3;
     public int exp = 0;
     public int expMax = 100;
-    public int id = 0;
+    public static int id;
     public bool isAlive;
-    
+
     //Attributes
     [SerializeField]
     internal protected float speed = 1;
@@ -21,14 +21,15 @@ public class Character : MonoBehaviour
     public float dexterity = 1;
     public float agility = 1;
     public float intelligence = 1;
-    
+
     //
-    public float hp = 0;
-    public float hpMax = 0;
+    public float hp = 100;
+    public float hpMax = 100;
     public float damage = 0;
     public float damageMax = 0;
     public float accuracy = 0;
     public float defence = 0;
+
 
     //General
     public int gold = 100;
@@ -38,8 +39,8 @@ public class Character : MonoBehaviour
         this.hp = this.vitality * 10;
         this.damageMax = this.strength * 2;
         this.damage = this.strength + this.accuracy;
-        this.accuracy = this.dexterity * (3/5);
-        this.defence = this.agility * 2;    
+        this.accuracy = this.dexterity * (3 / 5);
+        this.defence = this.agility * 2;
     }
 
     private void CalculateExp()
@@ -60,10 +61,8 @@ public class Character : MonoBehaviour
 
     public float TakeDamage(float hp, float damage)
     {
-        Debug.Log("Hit");
         hp -= damage;
         return hp;
-
     }
 
     public void Dead()
@@ -73,17 +72,5 @@ public class Character : MonoBehaviour
            Destroy(this.gameObject); 
         }
     }
-    
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+   
 }
