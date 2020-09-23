@@ -12,7 +12,7 @@ public class OpenDoors : MonoBehaviour
     public Transform Player;
     private Animator animator;
 
-    public GameObject canvas;
+    //public GameObject canvas;
 
     public Key.KeyType GetKeyType()
     {
@@ -35,8 +35,8 @@ public class OpenDoors : MonoBehaviour
     void Start()
     {
         Player = GameObject.FindWithTag("Player").transform;
-        canvas = GameObject.Find("Tip");
-        canvas.SetActive(false);
+        //canvas = GameObject.Find("Tip");
+        //canvas.SetActive(false);
     }
 
     // Update is called once per frame

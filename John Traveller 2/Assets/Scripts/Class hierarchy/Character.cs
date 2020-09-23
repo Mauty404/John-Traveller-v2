@@ -7,32 +7,32 @@ public class Character : MonoBehaviour
     //Core
     public new String name;
     public int level = 0;
-    public int attributePoints = 3;
+    public int attributePoints = 0;
     public int exp = 0;
-    public int expMax = 100;
+    public int expMax = 0;
     public static int id;
     public bool isAlive;
 
     //Attributes
     [SerializeField]
-    internal protected float speed = 1;
-    public float strength = 1;
-    public float vitality = 1;
-    public float dexterity = 1;
-    public float agility = 1;
-    public float intelligence = 1;
+    internal protected float speed = 3.5f;
+    public float strength = 0;
+    public float vitality = 0;
+    public float dexterity = 0;
+    public float agility = 0;
+    public float intelligence = 0;
 
     //
     public float hp = 100;
     public float hpMax = 100;
-    public float damage = 0;
+    public float damage = 1;
     public float damageMax = 0;
     public float accuracy = 0;
     public float defence = 0;
 
 
     //General
-    public int gold = 100;
+    public int gold = 0;
 
     private void CalculateStats()
     {

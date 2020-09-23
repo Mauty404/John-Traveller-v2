@@ -23,7 +23,7 @@ public class ChestScript : MonoBehaviour
     void Start()
     {
         Player = GameObject.FindWithTag("Player").transform;
-        canvas = GameObject.Find("Tip");
+        canvas = GameObject.Find("UI").transform.GetChild(2).gameObject;
         canvas.SetActive(false);
     }
 

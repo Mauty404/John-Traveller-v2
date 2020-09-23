@@ -6,18 +6,18 @@ using UnityEngine;
 public class Enemy : Character
 {
     private Transform player;
-    public float stoppingDistance;
-    public float distance;
     Character ch;
     private bool playerFound = false;
-    public float attackDistance;
     private float lastAttackTime;
-    public float attackDelay;
     private PlayerMovement pm;
+
+    public float distance = 4f;
+    public float stoppingDistance = 1f;
+    public float attackDistance = 1.3f;
+    public float attackDelay = 0.45f;
 
     private void Awake()
     {
-        
         id++;
     }
 

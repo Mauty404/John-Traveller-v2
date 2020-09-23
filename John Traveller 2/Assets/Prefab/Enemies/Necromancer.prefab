@@ -13,10 +13,10 @@ GameObject:
   - component: {fileID: 8314133964943327699}
   - component: {fileID: 3160453955979722261}
   - component: {fileID: 1116933448275027801}
-  - component: {fileID: 377040009}
+  - component: {fileID: -218030939596084188}
   m_Layer: 0
   m_Name: Necromancer
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -153,7 +153,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.5006938, y: 0.6164346}
   m_EdgeRadius: 0
---- !u!114 &377040009
+--- !u!114 &-218030939596084188
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -165,30 +165,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50d982a7239740d48b742a7e7a37a8b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: 
+  name: Necromancer
   level: 0
-  attributePoints: 3
+  attributePoints: 0
   exp: 0
-  expMax: 100
-  id: 0
+  expMax: 0
   isAlive: 0
-  speed: 1
-  strength: 1
-  vitality: 1
-  dexterity: 1
-  agility: 1
-  intelligence: 1
-  hp: 0
-  hpMax: 0
-  damage: 0
+  speed: 3.5
+  strength: 0
+  vitality: 0
+  dexterity: 0
+  agility: 0
+  intelligence: 0
+  hp: 100
+  hpMax: 100
+  damage: 1
   damageMax: 0
   accuracy: 0
   defence: 0
-  gold: 100
-  stoppingDistance: 0
-  distance: 0
-  attackDistance: 0
-  attackDelay: 0
+  gold: 0
+  distance: 4
+  stoppingDistance: 1
+  attackDistance: 1.3
+  attackDelay: 0.45
 --- !u!1001 &508155685
 PrefabInstance:
   m_ObjectHideFlags: 0
