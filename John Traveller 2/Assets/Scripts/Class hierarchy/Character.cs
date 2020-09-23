@@ -61,8 +61,8 @@ public class Character : MonoBehaviour
 
     public float TakeDamage(float hp, float damage)
     {
-        hp -= damage;
-        return hp;
+        this.hp -= damage;
+        return this.hp;
     }
 
     public void Dead()

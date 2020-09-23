@@ -9,16 +9,17 @@ public class PlayerAttack : MonoBehaviour
     public Transform attackPos;
     public LayerMask whatIsEnemies;
     public float attackRange;
-    public float damage;
     private Enemy e;
     private Character ch;
+    private PlayerMovement pm;
+    public Animator anim;
     
 
 
     private void Start()
     {
         e = GameObject.FindWithTag("Enemy").GetComponent<Enemy>();
-
+        pm = GameObject.FindWithTag("Player").GetComponent<PlayerMovement>();
     }
 
     private void Update()
@@ -27,11 +28,11 @@ public class PlayerAttack : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.Space))
             
         {
+            anim.SetTrigger("Attack");
             Collider2D[] enemiesToDamage = Physics2D.OverlapCircleAll(attackPos.position, attackRange, whatIsEnemies);
-            for (int i = 0; i < enemiesToDamage.Length; i++)
-                
+            foreach (var enemy in enemiesToDamage)
             {
-                    e.hp = enemiesToDamage[i].GetComponent<Enemy>().TakeDamage(e.hp, damage);
+                enemy.GetComponent<Enemy>().TakeDamage(e.hp, pm.damage);
             }
         }
 
