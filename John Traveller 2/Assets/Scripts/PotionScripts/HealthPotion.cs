@@ -18,12 +18,13 @@ public class HealthPotion : MonoBehaviour
 
     public void AddHP()
     {
-        pm.hp = pm.hp + hpbonus;
+        if (pm.hp < pm.hpMax)
+            pm.hp = pm.hp + hpbonus;
     }
 
     private void OnTriggerEnter2D(Collider2D collider)
     {
-        if (player == collider && pm.hp < pm.hpMax)
+        if (player == collider)
         {
             Debug.Log("Heal");
             AddHP();
