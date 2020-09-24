@@ -1,9 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
+[System.Serializable]
 public class PlayerData
 {
+    public int currScene;
     public static int id;
 
     //Attributes
@@ -18,6 +21,7 @@ public class PlayerData
 
     public PlayerData(PlayerMovement player)
     {
+        currScene = SceneManager.GetActiveScene().buildIndex;
         speed = player.speed;
         hp = player.hp;
         hpMax = player.hpMax;

@@ -2,10 +2,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : Character
 {
-    
     public float moveSpeed = 5f;
 
     Rigidbody2D rb;
@@ -101,7 +101,8 @@ public class PlayerMovement : Character
     public void LoadPlayer()
     {
         PlayerData data = SaveSystem.LoadPlayer();
-        
+
+        SceneManager.LoadScene(data.currScene);
         speed = data.speed;
         hp = data.hp;
         hpMax = data.hpMax;
