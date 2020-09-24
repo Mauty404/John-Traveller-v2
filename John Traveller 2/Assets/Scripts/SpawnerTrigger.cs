@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class SpawnerTrigger : MonoBehaviour
 {
+    bool activated = false;
     EnemySpawner _enemySpawner;
     GameObject _spawnerObj;
     private void Start()
@@ -15,6 +16,11 @@ public class SpawnerTrigger : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        _enemySpawner.enabled = true;
+        if (!activated)
+        {
+            _enemySpawner.enabled = true;
+            activated = true;
+        }
+        
     }
 }

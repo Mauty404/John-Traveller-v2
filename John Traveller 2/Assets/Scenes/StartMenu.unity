@@ -1324,6 +1324,7 @@ GameObject:
   m_Component:
   - component: {fileID: 663471347}
   - component: {fileID: 663471348}
+  - component: {fileID: 663471349}
   m_Layer: 5
   m_Name: MainMenu
   m_TagString: Untagged
@@ -1366,6 +1367,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60fd5295772d15640a23b01335a7263d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &663471349
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 663471346}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfe48525c1d3f364b9a0a74f5fe10045, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: 
+  speed: 3.5
+  hp: 100
+  hpMax: 100
+  damage: 1
+  moveSpeed: 5
 --- !u!1 &676687861
 GameObject:
   m_ObjectHideFlags: 0
@@ -1830,7 +1849,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1071801806}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 663471349}
+        m_TargetAssemblyTypeName: PlayerMovement, Assembly-CSharp
+        m_MethodName: LoadPlayer
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1071801806
 MonoBehaviour:
   m_ObjectHideFlags: 0
