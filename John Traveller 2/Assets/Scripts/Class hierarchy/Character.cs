@@ -6,7 +6,7 @@ public class Character : MonoBehaviour
 {
     //Core
     public new String name;
-    public static int id;
+    public int id;
 
     //Attributes
     [SerializeField]

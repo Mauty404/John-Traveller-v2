@@ -18,7 +18,7 @@ public class Enemy : Character
 
     private void Awake()
     {
-        id++;
+        //id++;
     }
 
     void Start()

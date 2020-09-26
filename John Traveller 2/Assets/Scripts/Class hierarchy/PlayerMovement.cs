@@ -25,7 +25,7 @@ public class PlayerMovement : Character
 
     private void Awake()
     {
-        id++;
+        //id++;
     }
 
     void Start()
@@ -93,26 +93,5 @@ public class PlayerMovement : Character
             transform.eulerAngles = new Vector3(0f, 0f, 0f);
     }
     
-    public void SavePlayer()
-    {
-        SaveSystem.SavePlayer(this);
-    }
 
-    public void LoadPlayer()
-    {
-        PlayerData data = SaveSystem.LoadPlayer();
-
-        SceneManager.LoadScene(data.currScene);
-        speed = data.speed;
-        hp = data.hp;
-        hpMax = data.hpMax;
-        damage = data.damage;
-
-        Vector3 position;
-        
-        position.x = data.position[0];
-        position.y = data.position[1];
-        position.z = data.position[2];
-        transform.position = position;
-    }
 }
