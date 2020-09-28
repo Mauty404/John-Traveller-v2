@@ -253,7 +253,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.011228561, y: -0.15720081}
@@ -281,12 +281,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfe48525c1d3f364b9a0a74f5fe10045, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: 
+  name: Elf
   id: 1
   speed: 1
   hp: 100
   hpMax: 100
-  damage: 0
+  damage: 20
   moveSpeed: 5
 --- !u!114 &1495312660171938017
 MonoBehaviour:
