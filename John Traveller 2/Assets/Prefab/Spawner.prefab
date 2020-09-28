@@ -161,7 +161,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6422233363244020693}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bb7fa7ef81fe32d448b4198d0817985a, type: 3}
   m_Name: 
@@ -169,7 +169,7 @@ MonoBehaviour:
   respawnTime: 0
   amountOfEnemies: 4
   characterPrefabs:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  boss: {fileID: 0}
+  - {fileID: 2076377241938564204, guid: d02586c3c5335ec4282f7931bfad54aa, type: 3}
+  - {fileID: 5641851711212814084, guid: af6511a7ece25704d8adfae1a17ac576, type: 3}
+  - {fileID: 4589970058785673179, guid: 79b0d115d9b1c504dac22960a0bc3b38, type: 3}
+  boss: {fileID: 6930907969318657754, guid: de950512e492ebd42a62e12eba864acc, type: 3}
