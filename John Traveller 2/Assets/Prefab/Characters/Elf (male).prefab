@@ -27,9 +27,10 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.182, y: -0.242, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1543002273936573606}
   m_Father: {fileID: 1543002274798231623}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1945122344
 SpriteRenderer:
@@ -105,11 +106,11 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1543002273936573607}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.02, y: -0.216, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.16200002, y: 0.025999919, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1543002274798231623}
+  m_Father: {fileID: 1945122343}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1543002274798231673
@@ -126,7 +127,6 @@ GameObject:
   - component: {fileID: 237873071927928499}
   - component: {fileID: 251491566324069966}
   - component: {fileID: 2964574867001451019}
-  - component: {fileID: 1495312660171938017}
   - component: {fileID: 1543002274798231622}
   - component: {fileID: -1697267932335664452}
   m_Layer: 0
@@ -147,7 +147,6 @@ Transform:
   m_LocalPosition: {x: 30.18, y: -7.65, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1543002273936573606}
   - {fileID: 1945122343}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -283,29 +282,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Elf
   id: 1
-  speed: 1
   hp: 100
   hpMax: 100
   damage: 20
   moveSpeed: 5
---- !u!114 &1495312660171938017
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1543002274798231673}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e32b9c5035ad37c4b89d5807fe48313b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  attackPos: {fileID: 1543002273936573606}
   whatIsEnemies:
     serializedVersion: 2
     m_Bits: 512
-  attackRange: 1.41
-  anim: {fileID: 0}
 --- !u!114 &1543002274798231622
 MonoBehaviour:
   m_ObjectHideFlags: 0

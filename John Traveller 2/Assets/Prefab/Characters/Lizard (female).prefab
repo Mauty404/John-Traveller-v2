@@ -128,7 +128,6 @@ GameObject:
   - component: {fileID: 5011963565156595050}
   - component: {fileID: 8538418435485414658}
   - component: {fileID: 1018038467391001595}
-  - component: {fileID: 8902548557924434737}
   - component: {fileID: -3801098604269386536}
   m_Layer: 0
   m_Name: Lizard (female)
@@ -288,6 +287,10 @@ MonoBehaviour:
   hpMax: 100
   damage: 20
   moveSpeed: 5
+  attackRange: 0.5
+  whatIsEnemies:
+    serializedVersion: 2
+    m_Bits: 512
 --- !u!114 &1018038467391001595
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -300,24 +303,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f3c7d06a984bfd4080dc87a93e0c564, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &8902548557924434737
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8903021965344861359}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e32b9c5035ad37c4b89d5807fe48313b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  attackPos: {fileID: 1178716238705665960}
-  whatIsEnemies:
-    serializedVersion: 2
-    m_Bits: 512
-  attackRange: 1.51
-  anim: {fileID: 8903021965344861358}
 --- !u!114 &-3801098604269386536
 MonoBehaviour:
   m_ObjectHideFlags: 0

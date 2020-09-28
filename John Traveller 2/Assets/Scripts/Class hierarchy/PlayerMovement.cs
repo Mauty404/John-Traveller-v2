@@ -6,15 +6,20 @@ using UnityEngine.SceneManagement;
 
 public class PlayerMovement : Character
 {
+    // PSEUDO-GLOBAL VARIABLES
     public float moveSpeed = 5f;
+    private float attackRange = 0.6f;
+
+    // **********************************
+
 
     Rigidbody2D rb;
     Animator _animator;
-
+    private Enemy e;
     private Vector2 movement;
-    Vector3 currentPosition;
-    Vector3 previousPosition;
     protected internal int lastKeyMove;
+    private Transform attackPos;
+    public LayerMask whatIsEnemies;
 
     enum enumLastKeyMove
     {
@@ -46,8 +51,9 @@ public class PlayerMovement : Character
         else
             _animator.SetFloat("Speed", 0f);
 
-        if (IsAttack())
-            _animator.SetTrigger("Attack");
+        if (Input.GetKeyDown(KeyCode.Space))
+            Attack();
+            
 
 
 
@@ -77,12 +83,24 @@ public class PlayerMovement : Character
             return false;
     }
 
-    bool IsAttack()
+    void Attack()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
-            return true;
-        else
-            return false;
+        _animator.SetTrigger("Attack");
+        if (e == null || attackPos == null)
+        {
+            e = GameObject.FindWithTag("Enemy").GetComponent<Enemy>();
+            attackPos = transform.GetChild(0).transform.GetChild(0).gameObject.GetComponent<Transform>();
+        }
+
+        if (e != null)
+        {
+            Collider2D[] enemiesToDamage = Physics2D.OverlapCircleAll(attackPos.position, attackRange, whatIsEnemies.value);
+            foreach (var enemy in enemiesToDamage)
+            {
+                enemy.GetComponent<Enemy>().TakeDamage(e.hp, damage);
+
+            }
+        }
     }
 
     void Rotate()
@@ -92,6 +110,12 @@ public class PlayerMovement : Character
         if (Input.GetKeyDown(KeyCode.D))
             transform.eulerAngles = new Vector3(0f, 0f, 0f);
     }
-    
+
+
+    void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(attackPos.position, attackRange);
+    }
 
 }

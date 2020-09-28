@@ -99,7 +99,6 @@ GameObject:
   - component: {fileID: -5233872011497377387}
   - component: {fileID: 7380603643954655718}
   - component: {fileID: 269505971966390751}
-  - component: {fileID: 7278832103053233731}
   m_Layer: 0
   m_Name: Kinght (male)
   m_TagString: Player
@@ -258,6 +257,9 @@ MonoBehaviour:
   hpMax: 100
   damage: 20
   moveSpeed: 5
+  whatIsEnemies:
+    serializedVersion: 2
+    m_Bits: 512
 --- !u!114 &7380603643954655718
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -282,24 +284,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4dc6542deffcc2f4b812d8bd81c343cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &7278832103053233731
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3328620024582338536}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e32b9c5035ad37c4b89d5807fe48313b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  attackPos: {fileID: 7531653669028355043}
-  whatIsEnemies:
-    serializedVersion: 2
-    m_Bits: 512
-  attackRange: 1.51
-  anim: {fileID: 3328620024582338537}
 --- !u!1 &4356428382978154683
 GameObject:
   m_ObjectHideFlags: 0

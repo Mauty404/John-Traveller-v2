@@ -168,8 +168,8 @@ MonoBehaviour:
   name: Ogre
   id: 0
   speed: 2
-  hp: 100
-  hpMax: 100
+  hp: 200
+  hpMax: 200
   damage: 3
   distance: 4
   stoppingDistance: 1

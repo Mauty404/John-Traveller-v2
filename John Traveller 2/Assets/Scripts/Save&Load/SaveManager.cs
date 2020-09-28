@@ -52,7 +52,7 @@ public class SaveManager : MonoBehaviour
             SceneManager.LoadScene(loaded.currentScene);
             
             _playerMovement = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>();
-            _playerMovement.speed = loaded.speed;
+            _playerMovement.moveSpeed = loaded.speed;
             _playerMovement.hp = loaded.hp;
             _playerMovement.hpMax = loaded.hpMax;
             _playerMovement.damage = loaded.damage;
@@ -100,7 +100,7 @@ public class PlayerData
     {
        
         currentScene = SceneManager.GetActiveScene().buildIndex;
-        speed = SaveManager._playerMovement.speed;
+        speed = SaveManager._playerMovement.moveSpeed;
         hp = SaveManager._playerMovement.hp;
         hpMax = SaveManager._playerMovement.hpMax;
         damage = SaveManager._playerMovement.damage;

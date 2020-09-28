@@ -27,7 +27,8 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.221, y: -0.343, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1856339176677537666}
   m_Father: {fileID: 7861253577136540324}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -105,12 +106,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4388330361476937683}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.202, y: 0.023, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.019000098, y: 0.366, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 7861253577136540324}
-  m_RootOrder: 1
+  m_Father: {fileID: 398215713}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7861253577136540321
 GameObject:
@@ -123,7 +124,6 @@ GameObject:
   - component: {fileID: 7861253577136540324}
   - component: {fileID: 7861253577136540327}
   - component: {fileID: 7861253577136540326}
-  - component: {fileID: 3500236549689970634}
   - component: {fileID: 5385965928656216896}
   - component: {fileID: 2141966514914015612}
   - component: {fileID: -9206867388478726371}
@@ -148,7 +148,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 398215713}
-  - {fileID: 1856339176677537666}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -222,24 +221,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &3500236549689970634
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7861253577136540321}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e32b9c5035ad37c4b89d5807fe48313b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  attackPos: {fileID: 1856339176677537666}
-  whatIsEnemies:
-    serializedVersion: 2
-    m_Bits: 512
-  attackRange: 1.51
-  anim: {fileID: 7861253577136540326}
 --- !u!50 &5385965928656216896
 Rigidbody2D:
   serializedVersion: 4
@@ -301,11 +282,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Kinght
   id: 2
-  speed: 1
   hp: 100
   hpMax: 100
   damage: 20
   moveSpeed: 5
+  whatIsEnemies:
+    serializedVersion: 2
+    m_Bits: 512
 --- !u!114 &-8956913281891999788
 MonoBehaviour:
   m_ObjectHideFlags: 0

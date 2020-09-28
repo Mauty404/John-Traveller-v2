@@ -8,11 +8,6 @@ public class Character : MonoBehaviour
     public new String name;
     public int id;
 
-    //Attributes
-    [SerializeField]
-    internal protected float speed = 3.5f;
-
-    //
     public float hp = 100;
     public float hpMax = 100;
     public float damage = 1;

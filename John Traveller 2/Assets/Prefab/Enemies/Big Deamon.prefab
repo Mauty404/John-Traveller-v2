@@ -166,24 +166,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   name: Big Deamon
-  level: 0
-  attributePoints: 0
-  exp: 0
-  expMax: 0
-  isAlive: 0
+  id: 0
   speed: 2
-  strength: 0
-  vitality: 0
-  dexterity: 0
-  agility: 0
-  intelligence: 0
-  hp: 100
-  hpMax: 100
+  hp: 200
+  hpMax: 200
   damage: 3
-  damageMax: 0
-  accuracy: 0
-  defence: 0
-  gold: 0
   distance: 4
   stoppingDistance: 1
   attackDistance: 1.3

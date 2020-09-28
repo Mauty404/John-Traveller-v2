@@ -129,7 +129,6 @@ GameObject:
   - component: {fileID: 277278484989404505}
   - component: {fileID: -7350257887416151816}
   - component: {fileID: -8293960147989909134}
-  - component: {fileID: 4330459682958898391}
   m_Layer: 0
   m_Name: Lizard (male)
   m_TagString: Player
@@ -288,6 +287,9 @@ MonoBehaviour:
   hpMax: 100
   damage: 20
   moveSpeed: 5
+  whatIsEnemies:
+    serializedVersion: 2
+    m_Bits: 512
 --- !u!114 &-7350257887416151816
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -312,21 +314,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4dc6542deffcc2f4b812d8bd81c343cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &4330459682958898391
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7237544556259895552}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e32b9c5035ad37c4b89d5807fe48313b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  attackPos: {fileID: 367562890079894799}
-  whatIsEnemies:
-    serializedVersion: 2
-    m_Bits: 512
-  attackRange: 1.51
-  anim: {fileID: 7237544556259895555}

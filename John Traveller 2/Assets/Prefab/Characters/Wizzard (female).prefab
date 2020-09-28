@@ -98,7 +98,6 @@ GameObject:
   - component: {fileID: 4414551447856780528}
   - component: {fileID: 2249918790943226810}
   - component: {fileID: 1850002631383953349}
-  - component: {fileID: 728590264594970576}
   - component: {fileID: -6456769248767002822}
   m_Layer: 0
   m_Name: Wizzard (female)
@@ -258,6 +257,9 @@ MonoBehaviour:
   hpMax: 100
   damage: 20
   moveSpeed: 5
+  whatIsEnemies:
+    serializedVersion: 2
+    m_Bits: 512
 --- !u!114 &1850002631383953349
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -270,24 +272,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f3c7d06a984bfd4080dc87a93e0c564, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &728590264594970576
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2161975172492199850}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e32b9c5035ad37c4b89d5807fe48313b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  attackPos: {fileID: 2790833592013093738}
-  whatIsEnemies:
-    serializedVersion: 2
-    m_Bits: 512
-  attackRange: 1.51
-  anim: {fileID: 2161975172492199893}
 --- !u!114 &-6456769248767002822
 MonoBehaviour:
   m_ObjectHideFlags: 0
