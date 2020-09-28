@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7966276573897765456}
   - component: {fileID: 6219899292012285882}
   - component: {fileID: 4032638027684265140}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wogol
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -166,24 +166,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   name: Wogol
-  level: 0
-  attributePoints: 0
-  exp: 0
-  expMax: 0
-  isAlive: 0
+  id: 0
   speed: 3.5
-  strength: 0
-  vitality: 0
-  dexterity: 0
-  agility: 0
-  intelligence: 0
   hp: 100
   hpMax: 100
   damage: 1
-  damageMax: 0
-  accuracy: 0
-  defence: 0
-  gold: 0
   distance: 4
   stoppingDistance: 1
   attackDistance: 1.3
@@ -203,9 +190,25 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3116793359955759787, guid: fea4b3deb30f4914d9e8a04a192fcd0c, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 3116793361007037793, guid: fea4b3deb30f4914d9e8a04a192fcd0c, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 3116793361168036928, guid: fea4b3deb30f4914d9e8a04a192fcd0c, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 3116793361297260069, guid: fea4b3deb30f4914d9e8a04a192fcd0c, type: 3}
       propertyPath: m_Name
       value: Health bar (canvas)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3116793361297260069, guid: fea4b3deb30f4914d9e8a04a192fcd0c, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 3116793361297260072, guid: fea4b3deb30f4914d9e8a04a192fcd0c, type: 3}
       propertyPath: m_LocalPosition.x
