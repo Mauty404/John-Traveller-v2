@@ -8,7 +8,7 @@ public class Enemy : Character
     // PSEUDO-GLOBAL VARIABLES
     public float speed = 3.5f;
     public float distance = 4f;
-    public float stoppingDistance = 1f;
+    public float stoppingDistance = 0.5f;
     public float attackDistance = 1.3f;
     public float attackDelay = 0.45f;
 
@@ -16,20 +16,13 @@ public class Enemy : Character
 
 
     private Transform player;
-    Character ch;
-    private bool playerFound = false;
     private float lastAttackTime;
     private PlayerMovement pm;
 
-    private void Awake()
-    {
-        //id++;
-    }
 
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
-        ch = GetComponent<Character>();
         pm = GameObject.FindWithTag("Player").GetComponent<PlayerMovement>();
     }
 
@@ -50,6 +43,20 @@ public class Enemy : Character
             && Vector2.Distance(player.position, transform.position) > stoppingDistance)
         {
             transform.position = Vector2.MoveTowards(transform.position, player.position, speed * Time.deltaTime);
+
+            Vector3 position;
+            Vector3 john;
+            Vector3 direction;
+            john = GameObject.FindGameObjectWithTag("Player").transform.position;
+            position = transform.position;
+            direction = john - position;
+            direction = direction.normalized;
+            if (direction.x < 0)
+                transform.eulerAngles = new Vector3(0f, 180f, 0f);
+            if (direction.x > 0)
+                transform.eulerAngles = new Vector3(0f, 0f, 0f);
+            else
+                transform.eulerAngles = transform.eulerAngles;
         }
     }
 

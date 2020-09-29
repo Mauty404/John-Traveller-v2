@@ -28,11 +28,6 @@ public class PlayerMovement : Character
     }
 
 
-    private void Awake()
-    {
-        //id++;
-    }
-
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -52,11 +47,10 @@ public class PlayerMovement : Character
             _animator.SetFloat("Speed", 0f);
 
         if (Input.GetKeyDown(KeyCode.Space))
+        {
             Attack();
             
-
-
-
+        }
         Dead();
         Rotate();
     }
@@ -98,7 +92,17 @@ public class PlayerMovement : Character
             foreach (var enemy in enemiesToDamage)
             {
                 enemy.GetComponent<Enemy>().TakeDamage(e.hp, damage);
-
+                if (transform.eulerAngles.y > 100f && transform.eulerAngles.y < 210f)
+                {
+                    Vector3 tmp = new Vector3(enemy.transform.position.x - 1f, enemy.transform.position.y, enemy.transform.position.z);
+                    enemy.transform.position = Vector3.MoveTowards(enemy.transform.position, tmp, 6f);
+                }
+                else if (transform.eulerAngles.y > -50f && transform.eulerAngles.y < 50f)
+                {
+                    Vector3 tmp = new Vector3(enemy.transform.position.x + 1f, enemy.transform.position.y, enemy.transform.position.z);
+                    enemy.transform.position = Vector3.MoveTowards(enemy.transform.position, tmp, 6f);
+                }
+                
             }
         }
     }
