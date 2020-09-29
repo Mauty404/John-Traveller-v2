@@ -2,7 +2,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SocialPlatforms.GameCenter;
 using TMPro;
 
 public class OpenDoors : MonoBehaviour
@@ -35,8 +34,6 @@ public class OpenDoors : MonoBehaviour
     void Start()
     {
         Player = GameObject.FindWithTag("Player").transform;
-        //canvas = GameObject.Find("Tip");
-        //canvas.SetActive(false);
     }
 
     // Update is called once per frame
