@@ -14,8 +14,10 @@ public class UI_KeyHolder : MonoBehaviour
     private void Awake()
     {
         keyHolder = GameObject.FindWithTag("Player").GetComponent<KeyHolder>();
-        container = transform.Find("container");
-        keyTemplate = container.Find("keyTemplate");
+        container = transform.GetChild(0).gameObject.transform;
+        //container = transform.Find("container");
+        keyTemplate = container.transform.GetChild(0).gameObject.transform;
+        //keyTemplate = container.Find("keyTemplate");
         keyTemplate.gameObject.SetActive(false);
     }
 

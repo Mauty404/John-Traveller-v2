@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 6778561312884180576}
   - component: {fileID: 6778561312884180579}
   - component: {fileID: 3341537181867369251}
-  - component: {fileID: 2811833934654301400}
   - component: {fileID: 795706149082931307}
+  - component: {fileID: 5448512982603510206}
   m_Layer: 9
   m_Name: Big Deamon
   m_TagString: Enemy
@@ -127,32 +127,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!61 &2811833934654301400
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6778561312884180578}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.011780143, y: -0.15726662}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.2307693, y: 1.3846154}
-    newSize: {x: 0.32, y: 0.36}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.6479099, y: 0.99022865}
-  m_EdgeRadius: 0
 --- !u!114 &795706149082931307
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -173,8 +147,34 @@ MonoBehaviour:
   speed: 2
   distance: 4
   stoppingDistance: 0.7
-  attackDistance: 1.3
+  attackDistance: 0.9
   attackDelay: 0.45
+--- !u!61 &5448512982603510206
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6778561312884180578}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.015249252, y: -0.15058577}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.2307693, y: 1.3846154}
+    newSize: {x: 0.32, y: 0.36}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.70467186, y: 0.96145034}
+  m_EdgeRadius: 0
 --- !u!1001 &3894409934303244426
 PrefabInstance:
   m_ObjectHideFlags: 0

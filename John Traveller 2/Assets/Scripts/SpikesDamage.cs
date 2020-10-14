@@ -6,7 +6,7 @@ public class SpikesDamage : MonoBehaviour
 {
 
     Animator _animator;
-    GameObject player;
+    public GameObject player;
     PlayerMovement _playerMovement;
 
 
@@ -27,9 +27,17 @@ public class SpikesDamage : MonoBehaviour
             {
                 _playerMovement.hp -= 11;
                 if (_playerMovement.lastKeyMove == 1)
-                    player.transform.position = new Vector3(player.transform.position.x, 25.39f, player.transform.position.z);
+                {
+                    Vector3 tmp = new Vector3(player.transform.position.x, player.transform.position.y + 1f, player.transform.position.y);
+                    player.transform.position = Vector3.MoveTowards(player.transform.position, tmp, 10f);
+                    Debug.Log("Spikes");
+                }
                 else if (_playerMovement.lastKeyMove == 2)
-                    player.transform.position = new Vector3(player.transform.position.x, 23.89f, player.transform.position.z);
+                {
+                    Vector3 tmp = new Vector3(player.transform.position.x, player.transform.position.y - 1f, player.transform.position.y);
+                    player.transform.position = Vector3.MoveTowards(player.transform.position, tmp, 10f);
+                    Debug.Log("Spikes");
+                }
             }
     }
 
